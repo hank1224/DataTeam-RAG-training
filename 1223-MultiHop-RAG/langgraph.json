@@ -1,0 +1,18 @@
+{
+    "dependencies": [
+        "langchain_openai",
+        "./your_package"
+    ],
+    "graphs": {
+        "my_agent": "./your_package/your_file.py:agent"
+    },
+    "env": "./.env"
+}
+
+{
+    "dependencies": ["."],
+    "graphs": {
+      "agent": "./my_agent/agent.py:graph"
+    },
+    "env": ".env"
+  }
