@@ -89,7 +89,7 @@ def parse_law_html(file_path):
                 metadata.append({
                     "article_number": article_number,
                     "article_title": article_title,
-                    "artcile_content": article_content,
+                    "article_content": article_content,
                     "part_number": current_part["number"],
                     "part_title": current_part["title"],
                     "chapter_number": current_chapter["number"],
@@ -111,7 +111,7 @@ def save_metadata_to_json(metadata, output_file):
 
 if __name__ == "__main__":
     html_file_path = '1223-MultiHop-RAG/data-pre-process/民法-110-01-20.html'
-    output_json_path = '1223-MultiHop-RAG/data-pre-process/民法-110-01-20-metadata.json'
+    output_json_path = '1223-MultiHop-RAG/data-pre-process/民法-110-01-20.json'
 
     metadata = parse_law_html(html_file_path)
     save_metadata_to_json(metadata, output_json_path)

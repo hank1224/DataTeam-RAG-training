@@ -1,0 +1,26 @@
+# Source: https://js.langchain.com/docs/integrations/vectorstores/pgvector/
+services:
+  pgvector:
+    hostname: 127.0.0.1
+    image: pgvector/pgvector:pg17
+    ports:
+      - 5433:5432
+    env_file:
+      - .env
+    environment:
+      - POSTGRES_DB=civilcode
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+    # volumes:
+      # - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+  
+  psql:
+    image: postgres:17.2-alpine
+    ports:
+      - 5432:5432
+    env_file:
+      - .env
+    environment:
+      - POSTGRES_DB=civilcode
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}

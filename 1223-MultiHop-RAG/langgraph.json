@@ -1,18 +1,11 @@
 {
-    "dependencies": [
-        "langchain_openai",
-        "./your_package"
-    ],
-    "graphs": {
-        "my_agent": "./your_package/your_file.py:agent"
-    },
-    "env": "./.env"
-}
-
-{
     "dependencies": ["."],
     "graphs": {
-      "agent": "./my_agent/agent.py:graph"
+      "agent": "./CivilCode-ChatBot/agent.py:graph"
     },
-    "env": ".env"
+    "env": ".env",
+    "python_version": "3.11",
+    "dockerfile_lines": [
+      "RUN apt-get update"
+    ]
   }

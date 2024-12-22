@@ -4,4 +4,6 @@
 .env
 
 ### 1123-MultiHop-RAG
-民法-110-01-20-metadata.json
+民法-110-01-20.json
+civilcode-110-01-20.jsonl
+civilcode.db

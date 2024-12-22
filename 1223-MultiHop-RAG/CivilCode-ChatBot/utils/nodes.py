@@ -1,5 +1,5 @@
 from functools import lru_cache
-from langchain_anthropic import ChatAnthropic
+from langchain_openai import AzureChatOpenAI, AzureOpenAIEmbeddings
 from langchain_openai import ChatOpenAI
 from my_agent.utils.tools import tools
 from langgraph.prebuilt import ToolNode
