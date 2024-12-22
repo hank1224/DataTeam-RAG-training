@@ -8,7 +8,7 @@
 
 ## 資料前處理
 
-將html檔案使用 [extract_metadata.py](https://github.com/hank1224/DataTeam-RAG-training/blob/main/1223-MultiHop-RAG/data-pre-process/extract_metadata.py) 處理，建立條文索引，合併部分漢字編號，並存成 `民法-110-01-20.json`
+將html檔案使用 [extract_metadata.py](./extract-metadata.py) 處理，建立條文索引，合併部分漢字編號，並存成 `民法-110-01-20.json`
 
 ## OpenAI Batch API
 
@@ -16,6 +16,6 @@
 
 我也懶的去查怎麼用 langchain 批次處理這東西，所以我直接用 OpenAI 的 [Batch API 處理](https://platform.openai.com/docs/api-reference/batch)。
 
-Batch API 有限定輸入格式，所以要用 [convert-to-penai-batchAPI-jsonl.py](https://github.com/hank1224/DataTeam-RAG-training/blob/main/1223-MultiHop-RAG/data-pre-process/convert-to-penai-batchAPI-jsonl.py) 來轉換成 `civilcode-110-01-20.jsonl`，之後上傳。
+Batch API 有限定輸入格式，所以要用 [convert-to-penai-batchAPI-jsonl.py](./convert-to-openai-batchAPI-jsonl.py) 來轉換成 `civilcode-110-01-20.jsonl`，之後上傳。
 
 阿上傳完拿回來還要再轉一次然後再存回去 vector_store。
