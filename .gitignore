@@ -6,4 +6,5 @@
 ### 1123-MultiHop-RAG
 民法-110-01-20.json
 civilcode-110-01-20.jsonl
+batch_*_output.jsonl
 civilcode.db
