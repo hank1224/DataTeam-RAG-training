@@ -1,0 +1,590 @@
+[
+    {
+      "title": "總則編 - 法例章",
+      "part_number": 1,
+      "chapter_number": 1,
+      "section_number": null
+    },
+    {
+      "title": "總則編 - 人章 - 自然人節",
+      "part_number": 1,
+      "chapter_number": 2,
+      "section_number": 1
+    },
+    {
+      "title": "總則編 - 人章 - 法人節",
+      "part_number": 1,
+      "chapter_number": 2,
+      "section_number": 2
+    },
+    {
+      "title": "總則編 - 物章",
+      "part_number": 1,
+      "chapter_number": 3,
+      "section_number": null
+    },
+    {
+      "title": "總則編 - 法律行為章 - 通則節",
+      "part_number": 1,
+      "chapter_number": 4,
+      "section_number": 1
+    },
+    {
+      "title": "總則編 - 法律行為章 - 行為能力節",
+      "part_number": 1,
+      "chapter_number": 4,
+      "section_number": 2
+    },
+    {
+      "title": "總則編 - 法律行為章 - 意思表示節",
+      "part_number": 1,
+      "chapter_number": 4,
+      "section_number": 3
+    },
+    {
+      "title": "總則編 - 法律行為章 - 條件及期限節",
+      "part_number": 1,
+      "chapter_number": 4,
+      "section_number": 4
+    },
+    {
+      "title": "總則編 - 法律行為章 - 代理節",
+      "part_number": 1,
+      "chapter_number": 4,
+      "section_number": 5
+    },
+    {
+      "title": "總則編 - 法律行為章 - 無效及撤銷節",
+      "part_number": 1,
+      "chapter_number": 4,
+      "section_number": 6
+    },
+    {
+      "title": "總則編 - 期日及期間章",
+      "part_number": 1,
+      "chapter_number": 5,
+      "section_number": null
+    },
+    {
+      "title": "總則編 - 消滅時效章",
+      "part_number": 1,
+      "chapter_number": 6,
+      "section_number": null
+    },
+    {
+      "title": "總則編 - 權利之行使章",
+      "part_number": 1,
+      "chapter_number": 7,
+      "section_number": null
+    },
+    {
+      "title": "債編 - 通則章 - 債之發生節",
+      "part_number": 2,
+      "chapter_number": 1,
+      "section_number": 1
+    },
+    {
+      "title": "債編 - 通則章 - 債之標的節",
+      "part_number": 2,
+      "chapter_number": 1,
+      "section_number": 2
+    },
+    {
+      "title": "債編 - 通則章 - 債之效力節",
+      "part_number": 2,
+      "chapter_number": 1,
+      "section_number": 3
+    },
+    {
+      "title": "債編 - 通則章 - 多數債務人及債權人節",
+      "part_number": 2,
+      "chapter_number": 1,
+      "section_number": 4
+    },
+    {
+      "title": "債編 - 通則章 - 債之移轉節",
+      "part_number": 2,
+      "chapter_number": 1,
+      "section_number": 5
+    },
+    {
+      "title": "債編 - 通則章 - 債之消滅節",
+      "part_number": 2,
+      "chapter_number": 1,
+      "section_number": 6
+    },
+    {
+      "title": "債編 - 各種之債章 - 買賣節",
+      "part_number": 2,
+      "chapter_number": 2,
+      "section_number": 1
+    },
+    {
+      "title": "債編 - 各種之債章 - 互易節",
+      "part_number": 2,
+      "chapter_number": 2,
+      "section_number": 2
+    },
+    {
+      "title": "債編 - 各種之債章 - 交互計算節",
+      "part_number": 2,
+      "chapter_number": 2,
+      "section_number": 3
+    },
+    {
+      "title": "債編 - 各種之債章 - 贈與節",
+      "part_number": 2,
+      "chapter_number": 2,
+      "section_number": 4
+    },
+    {
+      "title": "債編 - 各種之債章 - 租賃節",
+      "part_number": 2,
+      "chapter_number": 2,
+      "section_number": 5
+    },
+    {
+      "title": "債編 - 各種之債章 - 借貸節",
+      "part_number": 2,
+      "chapter_number": 2,
+      "section_number": 6
+    },
+    {
+      "title": "債編 - 各種之債章 - 僱傭節",
+      "part_number": 2,
+      "chapter_number": 2,
+      "section_number": 7
+    },
+    {
+      "title": "債編 - 各種之債章 - 承攬節",
+      "part_number": 2,
+      "chapter_number": 2,
+      "section_number": 8
+    },
+    {
+      "title": "債編 - 各種之債章 - 旅遊節",
+      "part_number": 2,
+      "chapter_number": 2,
+      "section_number": 8
+    },
+    {
+      "title": "債編 - 各種之債章 - 出版節",
+      "part_number": 2,
+      "chapter_number": 2,
+      "section_number": 9
+    },
+    {
+      "title": "債編 - 各種之債章 - 委任節",
+      "part_number": 2,
+      "chapter_number": 2,
+      "section_number": 10
+    },
+    {
+      "title": "債編 - 各種之債章 - 經理人及代辦商節",
+      "part_number": 2,
+      "chapter_number": 2,
+      "section_number": 11
+    },
+    {
+      "title": "債編 - 各種之債章 - 居間節",
+      "part_number": 2,
+      "chapter_number": 2,
+      "section_number": 12
+    },
+    {
+      "title": "債編 - 各種之債章 - 行紀節",
+      "part_number": 2,
+      "chapter_number": 2,
+      "section_number": 13
+    },
+    {
+      "title": "債編 - 各種之債章 - 寄託節",
+      "part_number": 2,
+      "chapter_number": 2,
+      "section_number": 14
+    },
+    {
+      "title": "債編 - 各種之債章 - 倉庫節",
+      "part_number": 2,
+      "chapter_number": 2,
+      "section_number": 15
+    },
+    {
+      "title": "債編 - 各種之債章 - 運送節 - 通則節",
+      "part_number": 2,
+      "chapter_number": 2,
+      "section_number": 16
+    },
+    {
+      "title": "債編 - 各種之債章 - 運送節 - 物品運送節",
+      "part_number": 2,
+      "chapter_number": 2,
+      "section_number": 16
+    },
+    {
+      "title": "債編 - 各種之債章 - 運送節 - 旅客運送節",
+      "part_number": 2,
+      "chapter_number": 2,
+      "section_number": 16
+    },
+    {
+      "title": "債編 - 各種之債章 - 承攬運送節",
+      "part_number": 2,
+      "chapter_number": 2,
+      "section_number": 17
+    },
+    {
+      "title": "債編 - 各種之債章 - 合夥節",
+      "part_number": 2,
+      "chapter_number": 2,
+      "section_number": 18
+    },
+    {
+      "title": "債編 - 各種之債章 - 隱名合夥節",
+      "part_number": 2,
+      "chapter_number": 2,
+      "section_number": 19
+    },
+    {
+      "title": "債編 - 各種之債章 - 合會節",
+      "part_number": 2,
+      "chapter_number": 2,
+      "section_number": 19
+    },
+    {
+      "title": "債編 - 各種之債章 - 指示證券節",
+      "part_number": 2,
+      "chapter_number": 2,
+      "section_number": 20
+    },
+    {
+      "title": "債編 - 各種之債章 - 無記名證券節",
+      "part_number": 2,
+      "chapter_number": 2,
+      "section_number": 21
+    },
+    {
+      "title": "債編 - 各種之債章 - 終身定期金節",
+      "part_number": 2,
+      "chapter_number": 2,
+      "section_number": 22
+    },
+    {
+      "title": "債編 - 各種之債章 - 和解節",
+      "part_number": 2,
+      "chapter_number": 2,
+      "section_number": 23
+    },
+    {
+      "title": "債編 - 各種之債章 - 保證節",
+      "part_number": 2,
+      "chapter_number": 2,
+      "section_number": 24
+    },
+    {
+      "title": "債編 - 各種之債章 - 人事保證節",
+      "part_number": 2,
+      "chapter_number": 2,
+      "section_number": 24
+    },
+    {
+      "title": "物權編 - 通則章",
+      "part_number": 3,
+      "chapter_number": 1,
+      "section_number": null
+    },
+    {
+      "title": "物權編 - 所有權章 - 通則節",
+      "part_number": 3,
+      "chapter_number": 2,
+      "section_number": 1
+    },
+    {
+      "title": "物權編 - 所有權章 - 不動產所有權節",
+      "part_number": 3,
+      "chapter_number": 2,
+      "section_number": 2
+    },
+    {
+      "title": "物權編 - 所有權章 - 動產所有權節",
+      "part_number": 3,
+      "chapter_number": 2,
+      "section_number": 3
+    },
+    {
+      "title": "物權編 - 所有權章 - 共有節",
+      "part_number": 3,
+      "chapter_number": 2,
+      "section_number": 4
+    },
+    {
+      "title": "物權編 - 地上權章 - 普通地上權節",
+      "part_number": 3,
+      "chapter_number": 3,
+      "section_number": 1
+    },
+    {
+      "title": "物權編 - 地上權章 - 區分地上權節",
+      "part_number": 3,
+      "chapter_number": 3,
+      "section_number": 2
+    },
+    {
+      "title": "物權編 - 農育權章",
+      "part_number": 3,
+      "chapter_number": 4,
+      "section_number": null
+    },
+    {
+      "title": "物權編 - 不動產役權章",
+      "part_number": 3,
+      "chapter_number": 5,
+      "section_number": null
+    },
+    {
+      "title": "物權編 - 抵押權章 - 普通抵押權節",
+      "part_number": 3,
+      "chapter_number": 6,
+      "section_number": 1
+    },
+    {
+      "title": "物權編 - 抵押權章 - 最高限額抵押權節",
+      "part_number": 3,
+      "chapter_number": 6,
+      "section_number": 2
+    },
+    {
+      "title": "物權編 - 抵押權章 - 其他抵押權節",
+      "part_number": 3,
+      "chapter_number": 6,
+      "section_number": 3
+    },
+    {
+      "title": "物權編 - 質權章 - 動產質權節",
+      "part_number": 3,
+      "chapter_number": 7,
+      "section_number": 1
+    },
+    {
+      "title": "物權編 - 質權章 - 權利質權節",
+      "part_number": 3,
+      "chapter_number": 7,
+      "section_number": 2
+    },
+    {
+      "title": "物權編 - 典權章",
+      "part_number": 3,
+      "chapter_number": 8,
+      "section_number": null
+    },
+    {
+      "title": "物權編 - 留置權章",
+      "part_number": 3,
+      "chapter_number": 9,
+      "section_number": null
+    },
+    {
+      "title": "物權編 - 占有章",
+      "part_number": 3,
+      "chapter_number": 10,
+      "section_number": null
+    },
+    {
+      "title": "親屬編 - 通則章",
+      "part_number": 4,
+      "chapter_number": 1,
+      "section_number": null
+    },
+    {
+      "title": "親屬編 - 婚姻章 - 婚約節",
+      "part_number": 4,
+      "chapter_number": 2,
+      "section_number": 1
+    },
+    {
+      "title": "親屬編 - 婚姻章 - 結婚節",
+      "part_number": 4,
+      "chapter_number": 2,
+      "section_number": 2
+    },
+    {
+      "title": "親屬編 - 婚姻章 - 婚姻之普通效力節",
+      "part_number": 4,
+      "chapter_number": 2,
+      "section_number": 3
+    },
+    {
+      "title": "親屬編 - 婚姻章 - 夫妻財產制節 - 通則節",
+      "part_number": 4,
+      "chapter_number": 2,
+      "section_number": 4
+    },
+    {
+      "title": "親屬編 - 婚姻章 - 夫妻財產制節 - 法定財產制節",
+      "part_number": 4,
+      "chapter_number": 2,
+      "section_number": 4
+    },
+    {
+      "title": "親屬編 - 婚姻章 - 夫妻財產制節 - 約定財產制節 - 共同財產制節",
+      "part_number": 4,
+      "chapter_number": 2,
+      "section_number": 4
+    },
+    {
+      "title": "親屬編 - 婚姻章 - 夫妻財產制節 - 約定財產制節 - 分別財產制節",
+      "part_number": 4,
+      "chapter_number": 2,
+      "section_number": 4
+    },
+    {
+      "title": "親屬編 - 婚姻章 - 離婚節",
+      "part_number": 4,
+      "chapter_number": 2,
+      "section_number": 5
+    },
+    {
+      "title": "親屬編 - 父母子女章",
+      "part_number": 4,
+      "chapter_number": 3,
+      "section_number": null
+    },
+    {
+      "title": "親屬編 - 監護章 - 未成年人之監護節",
+      "part_number": 4,
+      "chapter_number": 4,
+      "section_number": 1
+    },
+    {
+      "title": "親屬編 - 監護章 - 成年人之監護及輔助節",
+      "part_number": 4,
+      "chapter_number": 4,
+      "section_number": 2
+    },
+    {
+      "title": "親屬編 - 監護章 - 成年人之意定監護節",
+      "part_number": 4,
+      "chapter_number": 4,
+      "section_number": 3
+    },
+    {
+      "title": "親屬編 - 扶養章",
+      "part_number": 4,
+      "chapter_number": 5,
+      "section_number": null
+    },
+    {
+      "title": "親屬編 - 家章",
+      "part_number": 4,
+      "chapter_number": 6,
+      "section_number": null
+    },
+    {
+        "title": "親屬編 - 親屬會議章",
+        "part_number": 4,
+        "chapter_number": 7,
+        "section_number": null
+    },
+    {
+        "title": "繼承編 - 繼承人章 - 繼承權節",
+        "part_number": 5,
+        "chapter_number": 1,
+        "section_number": 1
+    },
+    {
+        "title": "繼承編 - 繼承人章 - 繼承權之喪失節",
+        "part_number": 5,
+        "chapter_number": 1,
+        "section_number": 2
+    },
+    {
+        "title": "繼承編 - 繼承人章 - 繼承權之拋棄節",
+        "part_number": 5,
+        "chapter_number": 1,
+        "section_number": 3
+    },
+    {
+        "title": "繼承編 - 繼承人章 - 特留分節",
+        "part_number": 5,
+        "chapter_number": 1,
+        "section_number": 4
+    },
+    {
+        "title": "繼承編 - 繼承人章 - 應繼分節",
+        "part_number": 5,
+        "chapter_number": 1,
+        "section_number": 5
+    },
+    {
+        "title": "繼承編 - 繼承人章 - 胎兒之繼承權節",
+        "part_number": 5,
+        "chapter_number": 1,
+        "section_number": 6
+    },
+    {
+        "title": "繼承編 - 繼承人章 - 代位繼承節",
+        "part_number": 5,
+        "chapter_number": 1,
+        "section_number": 7
+    },
+    {
+        "title": "繼承編 - 繼承人章 - 繼承人之欠缺節",
+        "part_number": 5,
+        "chapter_number": 1,
+        "section_number": 8
+    },
+    {
+        "title": "繼承編 - 繼承人章 - 繼承人之保護節",
+        "part_number": 5,
+        "chapter_number": 1,
+        "section_number": 9
+    },
+    {
+        "title": "繼承編 - 繼承人章 - 繼承人之責任節",
+        "part_number": 5,
+        "chapter_number": 1,
+        "section_number": 10
+    },
+    {
+        "title": "繼承編 - 繼承人章 - 繼承人之權利節",
+        "part_number": 5,
+        "chapter_number": 1,
+        "section_number": 11
+    },
+    {
+        "title": "繼承編 - 遺產之分割章",
+        "part_number": 5,
+        "chapter_number": 2,
+        "section_number": null
+    },
+    {
+        "title": "繼承編 - 遺囑章 - 方式節",
+        "part_number": 5,
+        "chapter_number": 3,
+        "section_number": 1
+    },
+    {
+        "title": "繼承編 - 遺囑章 - 效力節",
+        "part_number": 5,
+        "chapter_number": 3,
+        "section_number": 2
+    },
+    {
+        "title": "繼承編 - 遺囑章 - 撤回節",
+        "part_number": 5,
+        "chapter_number": 3,
+        "section_number": 3
+    },
+    {
+        "title": "繼承編 - 遺囑章 - 遺囑執行人節",
+        "part_number": 5,
+        "chapter_number": 3,
+        "section_number": 4
+    },
+    {
+        "title": "繼承編 - 遺贈章",
+        "part_number": 5,
+        "chapter_number": 4,
+        "section_number": null
+    }
+]        
