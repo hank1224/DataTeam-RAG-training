@@ -1,4 +1,4 @@
-# CilvilCode-plan-execute-Bot
+# CivilCode-plan-execute-Bot
 
 MultiHop + RAG + Agent 的民法問題解答Bot
 

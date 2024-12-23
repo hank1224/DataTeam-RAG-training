@@ -4,7 +4,7 @@ SimsLab 實驗室 Data Team，學長姐訓練碩一 RAG 技術的計劃，我是
 
 ## 1126-LangChain-Tutorials4-Agent
 
-LangChain Agent(aka. LangGraph) 介紹，[報告簡報在此](.static/LangChain-tutorial4-Agents.pdf)。
+LangChain Agent(aka. LangGraph) 介紹，[報告簡報在此](./static/LangChain-tutorial4-Agents.pdf)。
 
 還有 LangChain Agent 的官方 Tutorial 實作。
 
