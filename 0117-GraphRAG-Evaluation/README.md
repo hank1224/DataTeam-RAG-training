@@ -62,3 +62,25 @@ expected_responses = [
     "孔明利用崔諒和楊陵的內應計策，讓關興和張苞扮作安定軍馬進入南安城，最終擒住了夏侯楙。",
 ]
 ```
+
+### 評估結果
+
+```plaintext
+{'context_recall': 1.0000, 'faithfulness': 0.9235, 'factual_correctness': 0.4300}
+```
+
+#### LLM Based Context Recall
+
+衡量成功檢索到多少相關文件，使用 `user_input` 、 `reference` 和 `retrieved_contexts` 計算的
+
+#### Faithfulness
+
+衡量 `response` 與 `retrieved context` 在事實上的一致性。
+
+#### Factual Correctness
+
+評估生成的 `response` 與 `reference` 的事實準確性。
+
+### RAGAS 可用指標
+
+https://docs.ragas.io/en/latest/concepts/metrics/available_metrics/
