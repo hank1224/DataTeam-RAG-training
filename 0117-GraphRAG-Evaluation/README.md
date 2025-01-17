@@ -2,40 +2,40 @@
 
 ## Knowledge Graph RAG 部分有三
 
-1. [0117-LangChain-KG-RAG](./0117-GraphRAG-Evaluation/0117-LangChain-KG-RAG.ipynb)
+1. [0117-LangChain-KG-RAG](0117-LangChain-KG-RAG.ipynb)
     - 學長提供的拿來改
-2. [0117-LlamaIndex-KG-RAG（失敗）](./0117-GraphRAG-Evaluation/0117-LlamaIndex-KG-RAG.ipynb)
+2. [0117-LlamaIndex-KG-RAG（失敗）](0117-LlamaIndex-KG-RAG.ipynb)
     - LlamaIndex 仿照 GraphRAG 的實作，但仍有差距。
     - 僅能執行到建立 KG 部分，無法進行問答。
     - 建立 Community 時失敗，卡到 Azure 的 暴力 filter。
-3. [0117-GraphRAG](./0117-GraphRAG-Evaluation/GraphRAG/0117-GraphRAG.ipynb)
+3. [0117-GraphRAG](./GraphRAG/0117-GraphRAG.ipynb)
     - 微軟 GraphRAG
 
 ### 建構 KG 使用資料
 
-- [三國演義第 90 回](./0117-GraphRAG-Evaluation/data/90-Romance-of-the-Three-Kingdoms.txt)
-- [三國演義第 91 回](./0117-GraphRAG-Evaluation/data/91-Romance-of-the-Three-Kingdoms.txt)
-- [三國演義第 92 回](./0117-GraphRAG-Evaluation/data/92-Romance-of-the-Three-Kingdoms.txt)
+- [三國演義第 90 回](./data/90-Romance-of-the-Three-Kingdoms.txt)
+- [三國演義第 91 回](./data/91-Romance-of-the-Three-Kingdoms.txt)
+- [三國演義第 92 回](./data/92-Romance-of-the-Three-Kingdoms.txt)
 
 #### /data 其他檔案也試過
 
-1. [dataset.txt](./0117-GraphRAG-Evaluation/data/dataset.txt)
+1. [dataset.txt](./data/dataset.txt)
     - GraphRAG 官方使用的一本小說，製作 Evaluation 資料集時發現不適合且太長。
-2. [age-of-22.txt](./0117-GraphRAG-Evaluation/data/age-of-22.txt)
+2. [age-of-22.txt](./data/age-of-22.txt)
     - 網路複製幹文，這種較為口語且沒有明確表示說這句話的是誰，不利於 KG 建立。
     - 建立出來效果很差。
-3. [school.txt](./0117-GraphRAG-Evaluation/data/school.txt)
+3. [school.txt](./data/school.txt)
     - 戰校複製文，與 age-of-22.txt 一樣，效果很差。
 
 ### 檢視 KG 建立成果
 
 開好 docker 後把兩個 notebook 跑完。
 
-[0117-LangChain-KG-RAG](./0117-GraphRAG-Evaluation/0117-LangChain-KG-RAG.ipynb)：[Neo4j local 7474](http://localhost:7474/browser/)
+[0117-LangChain-KG-RAG](0117-LangChain-KG-RAG.ipynb)：[Neo4j local 7474](http://localhost:7474/browser/)
 
 ![img](./static/0117-neo4j-7474-KG.png)
 
-[0117-LlamaIndex-KG-RAG（失敗）](./0117-GraphRAG-Evaluation/0117-LlamaIndex-KG-RAG.ipynb)：[Neo4j local 7475](http://localhost:7475/browser/)
+[0117-LlamaIndex-KG-RAG（失敗）](0117-LlamaIndex-KG-RAG.ipynb)：[Neo4j local 7475](http://localhost:7475/browser/)
 
 ![img](./static/0117-neo4j-7475-KG.png)
 
