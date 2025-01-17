@@ -21,3 +21,9 @@ MultiHop + RAG + Agent 實作，主題為`民法問題解決Agent`。
 **花了三天熬夜實作，做到吐血馬的。**
 
 此專案詳細說明請見 [CivilCode Agent README](./1223-MultiHop-RAG/README.md)
+
+## 0117-GraphRAG-Evaluation
+
+Knowledge Graph RAG and Evaluation 實作。
+
+[GraphRAG-Evaluation README](./0117-GraphRAG-Evaluation/README.md)

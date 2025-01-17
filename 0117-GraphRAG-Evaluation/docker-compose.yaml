@@ -1,0 +1,54 @@
+services:
+  langchain-neo4j:
+    image: neo4j:latest
+    volumes:
+        - langchain_logs:/logs
+        - langchain_config:/config
+        - langchain_data:/data
+        - langchain_plugins:/plugins
+    environment:
+        - NEO4J_AUTH=neo4j/your_password
+
+        ### These are for Error in LangChain ###
+        # ValueError: Could not use APOC procedures. Please ensure the APOC plugin is installed in Neo4j and that 'apoc.meta.data()' is allowed in Neo4j configuration
+        - NEO4J_apoc_export_file_enabled=true
+        - NEO4J_apoc_import_file_enabled=true 
+        - NEO4J_apoc_import_file_use__neo4j__config=true 
+        - NEO4J_PLUGINS=["apoc"]
+        - NEO4J_dbms_security_procedures_unrestricted=apoc.*
+        - NEO4J_dbms_security_procedures_allowlist=apoc.*
+    ports:
+      - "7474:7474"
+      - "7687:7687"
+
+  llamaindex-neo4j:
+    image: neo4j:latest
+    volumes:
+        - llamaindex_logs:/logs
+        - llamaindex_config:/config
+        - llamaindex_data:/data
+        - llamaindex_plugins:/plugins
+    environment:
+        - NEO4J_AUTH=neo4j/your_password
+
+        ### These are for Error in LangChain ###
+        # ValueError: Could not use APOC procedures. Please ensure the APOC plugin is installed in Neo4j and that 'apoc.meta.data()' is allowed in Neo4j configuration
+        - NEO4J_apoc_export_file_enabled=true
+        - NEO4J_apoc_import_file_enabled=true 
+        - NEO4J_apoc_import_file_use__neo4j__config=true 
+        - NEO4J_PLUGINS=["apoc"]
+        - NEO4J_dbms_security_procedures_unrestricted=apoc.*
+        - NEO4J_dbms_security_procedures_allowlist=apoc.*
+    ports:
+      - "7475:7474"
+      - "7688:7687"
+
+volumes:
+  langchain_logs:
+  langchain_config:
+  langchain_data:
+  langchain_plugins:
+  llamaindex_logs:
+  llamaindex_config:
+  llamaindex_data:
+  llamaindex_plugins:

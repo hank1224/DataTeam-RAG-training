@@ -1,0 +1,722 @@
+10:54:32,458 graphrag.cli.index INFO Logging enabled at /Users/hank/CodeSpace/DataTeam-RAG-training/0117-GraphRAG-Evaluation/GraphRAG/logs/indexing-engine.log
+10:54:32,460 graphrag.cli.index INFO Starting pipeline run for: 20250117-105432, dry_run=False
+10:54:32,460 graphrag.cli.index INFO Using default configuration: {
+    "llm": {
+        "api_key": "==== REDACTED ====",
+        "type": "azure_openai_chat",
+        "encoding_model": "cl100k_base",
+        "model": "gpt-4o",
+        "max_tokens": 4000,
+        "temperature": 0.0,
+        "top_p": 1.0,
+        "n": 1,
+        "frequency_penalty": 0.0,
+        "presence_penalty": 0.0,
+        "request_timeout": 180.0,
+        "api_base": "https://chenhaoen-eastus2.openai.azure.com",
+        "api_version": "2024-02-15-preview",
+        "proxy": null,
+        "audience": null,
+        "deployment_name": "gpt-4o",
+        "model_supports_json": true,
+        "tokens_per_minute": 0,
+        "requests_per_minute": 0,
+        "max_retries": 10,
+        "max_retry_wait": 10.0,
+        "sleep_on_rate_limit_recommendation": true,
+        "concurrent_requests": 25,
+        "responses": null
+    },
+    "parallelization": {
+        "stagger": 0.3,
+        "num_threads": 10
+    },
+    "async_mode": "threaded",
+    "root_dir": "/Users/hank/CodeSpace/DataTeam-RAG-training/0117-GraphRAG-Evaluation/GraphRAG",
+    "reporting": {
+        "type": "file",
+        "base_dir": "/Users/hank/CodeSpace/DataTeam-RAG-training/0117-GraphRAG-Evaluation/GraphRAG/logs",
+        "storage_account_blob_url": null
+    },
+    "storage": {
+        "type": "file",
+        "base_dir": "/Users/hank/CodeSpace/DataTeam-RAG-training/0117-GraphRAG-Evaluation/GraphRAG/output",
+        "storage_account_blob_url": null,
+        "cosmosdb_account_url": null
+    },
+    "update_index_storage": null,
+    "cache": {
+        "type": "file",
+        "base_dir": "cache",
+        "storage_account_blob_url": null,
+        "cosmosdb_account_url": null
+    },
+    "input": {
+        "type": "file",
+        "file_type": "text",
+        "base_dir": "input",
+        "storage_account_blob_url": null,
+        "encoding": "utf-8",
+        "file_pattern": ".*\\.txt$",
+        "file_filter": null,
+        "source_column": null,
+        "timestamp_column": null,
+        "timestamp_format": null,
+        "text_column": "text",
+        "title_column": null,
+        "document_attribute_columns": []
+    },
+    "embed_graph": {
+        "enabled": true,
+        "dimensions": 1536,
+        "num_walks": 10,
+        "walk_length": 40,
+        "window_size": 2,
+        "iterations": 3,
+        "random_seed": 597832,
+        "use_lcc": true
+    },
+    "embeddings": {
+        "llm": {
+            "api_key": "==== REDACTED ====",
+            "type": "azure_openai_embedding",
+            "encoding_model": "cl100k_base",
+            "model": "text-embedding-3-small",
+            "max_tokens": 4000,
+            "temperature": 0,
+            "top_p": 1,
+            "n": 1,
+            "frequency_penalty": 0.0,
+            "presence_penalty": 0.0,
+            "request_timeout": 180.0,
+            "api_base": "https://group2resources.openai.azure.com",
+            "api_version": "2024-02-15-preview",
+            "proxy": null,
+            "audience": null,
+            "deployment_name": "text-embedding-3-small",
+            "model_supports_json": null,
+            "tokens_per_minute": 0,
+            "requests_per_minute": 0,
+            "max_retries": 10,
+            "max_retry_wait": 10.0,
+            "sleep_on_rate_limit_recommendation": true,
+            "concurrent_requests": 25,
+            "responses": null
+        },
+        "parallelization": {
+            "stagger": 0.3,
+            "num_threads": 10
+        },
+        "async_mode": "threaded",
+        "batch_size": 16,
+        "batch_max_tokens": 8191,
+        "target": "required",
+        "skip": [],
+        "vector_store": {
+            "type": "lancedb",
+            "db_uri": "/Users/hank/CodeSpace/DataTeam-RAG-training/0117-GraphRAG-Evaluation/GraphRAG/output/lancedb",
+            "container_name": "==== REDACTED ====",
+            "overwrite": true
+        },
+        "strategy": null
+    },
+    "chunks": {
+        "size": 1200,
+        "overlap": 100,
+        "group_by_columns": [
+            "id"
+        ],
+        "strategy": "tokens",
+        "encoding_model": "cl100k_base"
+    },
+    "snapshots": {
+        "embeddings": false,
+        "graphml": true,
+        "transient": false
+    },
+    "entity_extraction": {
+        "llm": {
+            "api_key": "==== REDACTED ====",
+            "type": "azure_openai_chat",
+            "encoding_model": "cl100k_base",
+            "model": "gpt-4o",
+            "max_tokens": 4000,
+            "temperature": 0.0,
+            "top_p": 1.0,
+            "n": 1,
+            "frequency_penalty": 0.0,
+            "presence_penalty": 0.0,
+            "request_timeout": 180.0,
+            "api_base": "https://chenhaoen-eastus2.openai.azure.com",
+            "api_version": "2024-02-15-preview",
+            "proxy": null,
+            "audience": null,
+            "deployment_name": "gpt-4o",
+            "model_supports_json": true,
+            "tokens_per_minute": 0,
+            "requests_per_minute": 0,
+            "max_retries": 10,
+            "max_retry_wait": 10.0,
+            "sleep_on_rate_limit_recommendation": true,
+            "concurrent_requests": 25,
+            "responses": null
+        },
+        "parallelization": {
+            "stagger": 0.3,
+            "num_threads": 10
+        },
+        "async_mode": "threaded",
+        "prompt": "prompts/entity_extraction.txt",
+        "entity_types": [
+            "organization",
+            "person",
+            "geo",
+            "event"
+        ],
+        "max_gleanings": 1,
+        "strategy": null,
+        "encoding_model": "cl100k_base"
+    },
+    "summarize_descriptions": {
+        "llm": {
+            "api_key": "==== REDACTED ====",
+            "type": "azure_openai_chat",
+            "encoding_model": "cl100k_base",
+            "model": "gpt-4o",
+            "max_tokens": 4000,
+            "temperature": 0.0,
+            "top_p": 1.0,
+            "n": 1,
+            "frequency_penalty": 0.0,
+            "presence_penalty": 0.0,
+            "request_timeout": 180.0,
+            "api_base": "https://chenhaoen-eastus2.openai.azure.com",
+            "api_version": "2024-02-15-preview",
+            "proxy": null,
+            "audience": null,
+            "deployment_name": "gpt-4o",
+            "model_supports_json": true,
+            "tokens_per_minute": 0,
+            "requests_per_minute": 0,
+            "max_retries": 10,
+            "max_retry_wait": 10.0,
+            "sleep_on_rate_limit_recommendation": true,
+            "concurrent_requests": 25,
+            "responses": null
+        },
+        "parallelization": {
+            "stagger": 0.3,
+            "num_threads": 10
+        },
+        "async_mode": "threaded",
+        "prompt": "prompts/summarize_descriptions.txt",
+        "max_length": 500,
+        "strategy": null
+    },
+    "community_reports": {
+        "llm": {
+            "api_key": "==== REDACTED ====",
+            "type": "azure_openai_chat",
+            "encoding_model": "cl100k_base",
+            "model": "gpt-4o",
+            "max_tokens": 4000,
+            "temperature": 0.0,
+            "top_p": 1.0,
+            "n": 1,
+            "frequency_penalty": 0.0,
+            "presence_penalty": 0.0,
+            "request_timeout": 180.0,
+            "api_base": "https://chenhaoen-eastus2.openai.azure.com",
+            "api_version": "2024-02-15-preview",
+            "proxy": null,
+            "audience": null,
+            "deployment_name": "gpt-4o",
+            "model_supports_json": true,
+            "tokens_per_minute": 0,
+            "requests_per_minute": 0,
+            "max_retries": 10,
+            "max_retry_wait": 10.0,
+            "sleep_on_rate_limit_recommendation": true,
+            "concurrent_requests": 25,
+            "responses": null
+        },
+        "parallelization": {
+            "stagger": 0.3,
+            "num_threads": 10
+        },
+        "async_mode": "threaded",
+        "prompt": "prompts/community_report.txt",
+        "max_length": 2000,
+        "max_input_length": 8000,
+        "strategy": null
+    },
+    "claim_extraction": {
+        "llm": {
+            "api_key": "==== REDACTED ====",
+            "type": "azure_openai_chat",
+            "encoding_model": "cl100k_base",
+            "model": "gpt-4o",
+            "max_tokens": 4000,
+            "temperature": 0.0,
+            "top_p": 1.0,
+            "n": 1,
+            "frequency_penalty": 0.0,
+            "presence_penalty": 0.0,
+            "request_timeout": 180.0,
+            "api_base": "https://chenhaoen-eastus2.openai.azure.com",
+            "api_version": "2024-02-15-preview",
+            "proxy": null,
+            "audience": null,
+            "deployment_name": "gpt-4o",
+            "model_supports_json": true,
+            "tokens_per_minute": 0,
+            "requests_per_minute": 0,
+            "max_retries": 10,
+            "max_retry_wait": 10.0,
+            "sleep_on_rate_limit_recommendation": true,
+            "concurrent_requests": 25,
+            "responses": null
+        },
+        "parallelization": {
+            "stagger": 0.3,
+            "num_threads": 10
+        },
+        "async_mode": "threaded",
+        "enabled": false,
+        "prompt": "prompts/claim_extraction.txt",
+        "description": "Any claims or facts that could be relevant to information discovery.",
+        "max_gleanings": 1,
+        "strategy": null,
+        "encoding_model": "cl100k_base"
+    },
+    "cluster_graph": {
+        "max_cluster_size": 10,
+        "use_lcc": true,
+        "seed": 3735928559
+    },
+    "umap": {
+        "enabled": true
+    },
+    "local_search": {
+        "prompt": "prompts/local_search_system_prompt.txt",
+        "text_unit_prop": 0.5,
+        "community_prop": 0.15,
+        "conversation_history_max_turns": 5,
+        "top_k_entities": 10,
+        "top_k_relationships": 10,
+        "temperature": 0.0,
+        "top_p": 1.0,
+        "n": 1,
+        "max_tokens": 12000,
+        "llm_max_tokens": 2000
+    },
+    "global_search": {
+        "map_prompt": "prompts/global_search_map_system_prompt.txt",
+        "reduce_prompt": "prompts/global_search_reduce_system_prompt.txt",
+        "knowledge_prompt": "prompts/global_search_knowledge_system_prompt.txt",
+        "temperature": 0.0,
+        "top_p": 1.0,
+        "n": 1,
+        "max_tokens": 12000,
+        "data_max_tokens": 12000,
+        "map_max_tokens": 1000,
+        "reduce_max_tokens": 2000,
+        "concurrency": 32,
+        "dynamic_search_llm": "gpt-4o-mini",
+        "dynamic_search_threshold": 1,
+        "dynamic_search_keep_parent": false,
+        "dynamic_search_num_repeats": 1,
+        "dynamic_search_use_summary": false,
+        "dynamic_search_concurrent_coroutines": 16,
+        "dynamic_search_max_level": 2
+    },
+    "drift_search": {
+        "prompt": "prompts/drift_search_system_prompt.txt",
+        "temperature": 0.0,
+        "top_p": 1.0,
+        "n": 3,
+        "max_tokens": 12000,
+        "data_max_tokens": 12000,
+        "concurrency": 32,
+        "drift_k_followups": 20,
+        "primer_folds": 5,
+        "primer_llm_max_tokens": 12000,
+        "n_depth": 3,
+        "local_search_text_unit_prop": 0.9,
+        "local_search_community_prop": 0.1,
+        "local_search_top_k_mapped_entities": 10,
+        "local_search_top_k_relationships": 10,
+        "local_search_max_data_tokens": 12000,
+        "local_search_temperature": 0.0,
+        "local_search_top_p": 1.0,
+        "local_search_n": 1,
+        "local_search_llm_max_gen_tokens": 2000
+    },
+    "basic_search": {
+        "prompt": "prompts/basic_search_system_prompt.txt",
+        "text_unit_prop": 0.5,
+        "conversation_history_max_turns": 5,
+        "temperature": 0.0,
+        "top_p": 1.0,
+        "n": 1,
+        "max_tokens": 12000,
+        "llm_max_tokens": 2000
+    },
+    "encoding_model": "cl100k_base",
+    "skip_workflows": []
+}
+10:54:32,460 graphrag.storage.file_pipeline_storage INFO Creating file storage at /Users/hank/CodeSpace/DataTeam-RAG-training/0117-GraphRAG-Evaluation/GraphRAG/output
+10:54:32,461 graphrag.index.input.factory INFO loading input from root_dir=input
+10:54:32,461 graphrag.index.input.factory INFO using file storage for input
+10:54:32,461 graphrag.storage.file_pipeline_storage INFO search /Users/hank/CodeSpace/DataTeam-RAG-training/0117-GraphRAG-Evaluation/GraphRAG/input for files matching .*\.txt$
+10:54:32,461 graphrag.index.input.text INFO found text files from input, found [('91-Romance-of-the-Three-Kingdoms.txt', {}), ('92-Romance-of-the-Three-Kingdoms.txt', {}), ('90-Romance-of-the-Three-Kingdoms.txt', {})]
+10:54:32,463 graphrag.index.input.text INFO Found 3 files, loading 3
+10:54:32,465 graphrag.index.run.run_workflows INFO Final # of rows loaded: 3
+10:54:32,484 graphrag.utils.storage INFO reading table from storage: input.parquet
+10:54:56,118 graphrag.utils.storage INFO reading table from storage: input.parquet
+10:54:56,120 graphrag.utils.storage INFO reading table from storage: create_base_text_units.parquet
+10:54:56,139 graphrag.utils.storage INFO reading table from storage: create_base_text_units.parquet
+10:55:04,601 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:55:04,603 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:55:05,831 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:55:05,969 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:55:06,289 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:55:06,795 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:55:07,262 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:55:07,877 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:55:08,92 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:55:08,604 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:55:10,337 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:55:12,588 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:55:12,901 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:55:14,452 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:55:16,901 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:55:18,38 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:55:20,390 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:55:21,498 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:55:22,830 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:55:24,266 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:55:25,169 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:55:25,698 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:55:27,1 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:55:29,688 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:55:29,998 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:55:31,22 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:55:32,762 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:55:35,731 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:55:37,674 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:55:37,740 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:55:39,829 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:55:40,957 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:55:41,981 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:55:42,798 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:55:42,968 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:55:44,130 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:55:45,664 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:55:45,869 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:55:47,814 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:55:48,122 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:55:50,991 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:55:51,71 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:55:53,39 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:55:53,858 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:55:54,249 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:55:54,675 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:55:56,110 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:55:57,235 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:00,20 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:18,446 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:19,866 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:19,903 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:19,943 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:20,192 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:20,238 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:20,247 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:20,647 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:21,98 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:21,473 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:21,621 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:21,682 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:21,687 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:22,89 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:22,304 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:22,582 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:22,743 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:22,767 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:22,809 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:23,91 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:23,335 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:23,399 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:23,438 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:23,732 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:23,753 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:23,781 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:24,41 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:24,45 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:24,191 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:24,236 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:24,304 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:24,307 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:24,364 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:24,373 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:24,769 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:24,849 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:24,876 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:25,89 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:25,114 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:25,123 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:25,247 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:25,258 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:25,259 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:25,411 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:25,693 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:25,747 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:25,988 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:25,990 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:26,207 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:26,232 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:26,246 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:26,399 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:26,419 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:26,427 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:26,449 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:26,616 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:26,750 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:26,811 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:26,909 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:26,954 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:27,72 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:27,108 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:27,139 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:27,252 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:27,315 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:27,543 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:27,626 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:27,830 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:27,876 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:27,967 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:28,190 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:28,288 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:28,376 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:28,454 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:28,465 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:28,585 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:28,617 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:28,742 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:28,811 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:28,852 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:28,982 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:29,387 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:29,518 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:29,628 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:30,517 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:31,131 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:31,134 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:31,135 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:31,188 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:31,213 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:31,242 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:31,282 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:31,402 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:31,405 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:31,419 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:31,892 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:31,958 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:32,60 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:32,109 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:32,225 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:32,338 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:32,366 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:32,545 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:32,625 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:32,631 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:32,982 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:33,15 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:33,266 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:33,446 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:33,537 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:33,836 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:33,872 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:33,980 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:33,998 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:34,62 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:34,196 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:34,213 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:34,304 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:34,449 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:34,613 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:34,650 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:34,666 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:34,754 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:34,768 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:34,779 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:34,874 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:34,892 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:35,9 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:35,149 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:35,335 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:35,413 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:35,549 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:35,553 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:35,626 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:35,679 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:35,688 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:35,834 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:35,981 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:36,15 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:36,188 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:36,246 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:36,290 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:36,318 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:36,323 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:36,441 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:36,587 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:36,650 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:36,708 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:37,35 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:37,140 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:56:37,191 graphrag.utils.storage INFO reading table from storage: base_relationship_edges.parquet
+10:56:58,382 graphrag.utils.storage INFO reading table from storage: base_entity_nodes.parquet
+10:56:58,408 graphrag.utils.storage INFO reading table from storage: base_relationship_edges.parquet
+10:56:58,438 graphrag.utils.storage INFO reading table from storage: base_entity_nodes.parquet
+10:56:58,441 graphrag.utils.storage INFO reading table from storage: base_relationship_edges.parquet
+10:56:58,443 graphrag.utils.storage INFO reading table from storage: base_communities.parquet
+10:56:58,454 root INFO Starting preprocessing of transition probabilities on graph with 184 nodes and 364 edges
+10:56:58,455 root INFO Starting at time 1737082618.45504
+10:56:58,455 root INFO Beginning preprocessing of transition probabilities for 184 vertices
+10:56:58,455 root INFO Completed 1 / 184 vertices
+10:56:58,455 root INFO Completed 19 / 184 vertices
+10:56:58,455 root INFO Completed 37 / 184 vertices
+10:56:58,455 root INFO Completed 55 / 184 vertices
+10:56:58,455 root INFO Completed 73 / 184 vertices
+10:56:58,455 root INFO Completed 91 / 184 vertices
+10:56:58,455 root INFO Completed 109 / 184 vertices
+10:56:58,455 root INFO Completed 127 / 184 vertices
+10:56:58,455 root INFO Completed 145 / 184 vertices
+10:56:58,455 root INFO Completed 163 / 184 vertices
+10:56:58,455 root INFO Completed 181 / 184 vertices
+10:56:58,455 root INFO Completed preprocessing of transition probabilities for vertices
+10:56:58,455 root INFO Beginning preprocessing of transition probabilities for 364 edges
+10:56:58,455 root INFO Completed 1 / 364 edges
+10:56:58,458 root INFO Completed 37 / 364 edges
+10:56:58,460 root INFO Completed 73 / 364 edges
+10:56:58,462 root INFO Completed 109 / 364 edges
+10:56:58,463 root INFO Completed 145 / 364 edges
+10:56:58,464 root INFO Completed 181 / 364 edges
+10:56:58,465 root INFO Completed 217 / 364 edges
+10:56:58,466 root INFO Completed 253 / 364 edges
+10:56:58,466 root INFO Completed 289 / 364 edges
+10:56:58,467 root INFO Completed 325 / 364 edges
+10:56:58,467 root INFO Completed 361 / 364 edges
+10:56:58,467 root INFO Completed preprocessing of transition probabilities for edges
+10:56:58,467 root INFO Simulating walks on graph at time 1737082618.4676611
+10:56:58,468 root INFO Walk iteration: 1/10
+10:56:58,477 root INFO Walk iteration: 2/10
+10:56:58,484 root INFO Walk iteration: 3/10
+10:56:58,492 root INFO Walk iteration: 4/10
+10:56:58,500 root INFO Walk iteration: 5/10
+10:56:58,507 root INFO Walk iteration: 6/10
+10:56:58,515 root INFO Walk iteration: 7/10
+10:56:58,524 root INFO Walk iteration: 8/10
+10:56:58,531 root INFO Walk iteration: 9/10
+10:56:58,539 root INFO Walk iteration: 10/10
+10:56:58,546 root INFO Learning embeddings at time 1737082618.5464032
+10:56:58,548 gensim.models.word2vec INFO collecting all words and their counts
+10:56:58,548 gensim.models.word2vec INFO PROGRESS: at sentence #0, processed 0 words, keeping 0 word types
+10:56:58,549 gensim.models.word2vec INFO collected 184 word types from a corpus of 35480 raw words and 1840 sentences
+10:56:58,549 gensim.models.word2vec INFO Creating a fresh vocabulary
+10:56:58,550 gensim.utils INFO Word2Vec lifecycle event {'msg': 'effective_min_count=0 retains 184 unique words (100.00% of original 184, drops 0)', 'datetime': '2025-01-17T10:56:58.550169', 'gensim': '4.3.3', 'python': '3.10.16 (main, Dec 11 2024, 10:22:29) [Clang 14.0.6 ]', 'platform': 'macOS-15.2-arm64-arm-64bit', 'event': 'prepare_vocab'}
+10:56:58,550 gensim.utils INFO Word2Vec lifecycle event {'msg': 'effective_min_count=0 leaves 35480 word corpus (100.00% of original 35480, drops 0)', 'datetime': '2025-01-17T10:56:58.550204', 'gensim': '4.3.3', 'python': '3.10.16 (main, Dec 11 2024, 10:22:29) [Clang 14.0.6 ]', 'platform': 'macOS-15.2-arm64-arm-64bit', 'event': 'prepare_vocab'}
+10:56:58,550 gensim.models.word2vec INFO deleting the raw counts dictionary of 184 items
+10:56:58,550 gensim.models.word2vec INFO sample=0.001 downsamples 85 most-common words
+10:56:58,550 gensim.utils INFO Word2Vec lifecycle event {'msg': 'downsampling leaves estimated 17375.34218111721 word corpus (49.0%% of prior 35480)', 'datetime': '2025-01-17T10:56:58.550680', 'gensim': '4.3.3', 'python': '3.10.16 (main, Dec 11 2024, 10:22:29) [Clang 14.0.6 ]', 'platform': 'macOS-15.2-arm64-arm-64bit', 'event': 'prepare_vocab'}
+10:56:58,551 gensim.models.word2vec INFO estimated required memory for 184 words and 1536 dimensions: 2352992 bytes
+10:56:58,551 gensim.models.word2vec INFO resetting layer weights
+10:56:58,553 gensim.utils INFO Word2Vec lifecycle event {'update': False, 'trim_rule': 'None', 'datetime': '2025-01-17T10:56:58.553119', 'gensim': '4.3.3', 'python': '3.10.16 (main, Dec 11 2024, 10:22:29) [Clang 14.0.6 ]', 'platform': 'macOS-15.2-arm64-arm-64bit', 'event': 'build_vocab'}
+10:56:58,553 gensim.utils INFO Word2Vec lifecycle event {'msg': 'training model with 8 workers on 184 vocabulary and 1536 features, using sg=1 hs=0 sample=0.001 negative=5 window=2 shrink_windows=True', 'datetime': '2025-01-17T10:56:58.553175', 'gensim': '4.3.3', 'python': '3.10.16 (main, Dec 11 2024, 10:22:29) [Clang 14.0.6 ]', 'platform': 'macOS-15.2-arm64-arm-64bit', 'event': 'train'}
+10:56:58,673 gensim.models.word2vec INFO EPOCH 0: training on 35480 raw words (17348 effective words) took 0.1s, 146356 effective words/s
+10:56:58,863 gensim.models.word2vec INFO EPOCH 1: training on 35480 raw words (17362 effective words) took 0.2s, 95915 effective words/s
+10:56:58,962 gensim.models.word2vec INFO EPOCH 2: training on 35480 raw words (17402 effective words) took 0.1s, 185516 effective words/s
+10:56:58,962 gensim.utils INFO Word2Vec lifecycle event {'msg': 'training on 106440 raw words (52112 effective words) took 0.4s, 127281 effective words/s', 'datetime': '2025-01-17T10:56:58.962625', 'gensim': '4.3.3', 'python': '3.10.16 (main, Dec 11 2024, 10:22:29) [Clang 14.0.6 ]', 'platform': 'macOS-15.2-arm64-arm-64bit', 'event': 'train'}
+10:56:58,962 gensim.utils INFO Word2Vec lifecycle event {'params': 'Word2Vec<vocab=184, vector_size=1536, alpha=0.025>', 'datetime': '2025-01-17T10:56:58.962685', 'gensim': '4.3.3', 'python': '3.10.16 (main, Dec 11 2024, 10:22:29) [Clang 14.0.6 ]', 'platform': 'macOS-15.2-arm64-arm-64bit', 'event': 'created'}
+10:56:58,962 root INFO Completed. Ending time is 1737082618.962778 Elapsed time is -0.5077381134033203
+10:57:01,906 graphrag.utils.storage INFO reading table from storage: base_entity_nodes.parquet
+10:57:01,908 graphrag.utils.storage INFO reading table from storage: base_relationship_edges.parquet
+10:57:01,911 graphrag.utils.storage INFO reading table from storage: base_communities.parquet
+10:57:01,976 graphrag.utils.storage INFO reading table from storage: create_base_text_units.parquet
+10:57:01,980 graphrag.utils.storage INFO reading table from storage: create_final_entities.parquet
+10:57:01,982 graphrag.utils.storage INFO reading table from storage: create_final_relationships.parquet
+10:57:02,28 graphrag.utils.storage INFO reading table from storage: create_final_nodes.parquet
+10:57:02,31 graphrag.utils.storage INFO reading table from storage: create_final_relationships.parquet
+10:57:02,32 graphrag.utils.storage INFO reading table from storage: create_final_entities.parquet
+10:57:02,34 graphrag.utils.storage INFO reading table from storage: create_final_communities.parquet
+10:57:02,48 graphrag.index.operations.summarize_communities.prepare_community_reports INFO Number of nodes at level=1 => 175
+10:57:02,209 graphrag.index.operations.summarize_communities.prepare_community_reports INFO Number of nodes at level=0 => 184
+10:57:08,712 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:57:10,350 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:57:10,966 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:57:13,116 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:57:13,118 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:57:13,430 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:57:14,483 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:57:15,883 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:57:15,988 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:57:17,837 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:57:18,145 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:57:20,80 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:57:21,511 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:57:22,435 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:57:22,516 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:57:22,944 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:57:23,367 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:57:25,403 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:57:26,223 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:57:27,244 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:57:27,756 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:57:28,122 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:57:34,730 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:57:35,429 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:57:35,861 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:57:36,974 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:57:37,281 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:57:40,472 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:57:40,987 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:57:43,598 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:57:50,294 httpx INFO HTTP Request: POST https://chenhaoen-eastus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:57:50,421 graphrag.utils.storage INFO reading table from storage: create_final_documents.parquet
+10:57:50,425 graphrag.utils.storage INFO reading table from storage: create_final_relationships.parquet
+10:57:50,427 graphrag.utils.storage INFO reading table from storage: create_final_text_units.parquet
+10:57:50,430 graphrag.utils.storage INFO reading table from storage: create_final_entities.parquet
+10:57:50,431 graphrag.utils.storage INFO reading table from storage: create_final_community_reports.parquet
+10:57:50,436 graphrag.index.flows.generate_text_embeddings INFO Creating embeddings
+10:57:50,436 graphrag.index.operations.embed_text.embed_text INFO using vector store lancedb with container_name default for embedding text_unit.text: default-text_unit-text
+10:57:50,478 graphrag.index.operations.embed_text.strategies.openai INFO embedding 25 inputs via 25 snippets using 4 batches. max_batch_size=16, max_tokens=8191
+10:57:51,276 httpx INFO HTTP Request: POST https://group2resources.openai.azure.com/openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:57:51,280 httpx INFO HTTP Request: POST https://group2resources.openai.azure.com/openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:57:51,289 httpx INFO HTTP Request: POST https://group2resources.openai.azure.com/openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:57:51,476 httpx INFO HTTP Request: POST https://group2resources.openai.azure.com/openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:57:51,852 graphrag.index.operations.embed_text.embed_text INFO using vector store lancedb with container_name default for embedding community.full_content: default-community-full_content
+10:57:51,866 graphrag.index.operations.embed_text.strategies.openai INFO embedding 31 inputs via 31 snippets using 3 batches. max_batch_size=16, max_tokens=8191
+10:57:52,148 httpx INFO HTTP Request: POST https://group2resources.openai.azure.com/openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:57:52,291 httpx INFO HTTP Request: POST https://group2resources.openai.azure.com/openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:57:52,314 httpx INFO HTTP Request: POST https://group2resources.openai.azure.com/openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:57:52,482 graphrag.index.operations.embed_text.embed_text INFO using vector store lancedb with container_name default for embedding entity.description: default-entity-description
+10:57:52,490 graphrag.index.operations.embed_text.strategies.openai INFO embedding 267 inputs via 267 snippets using 17 batches. max_batch_size=16, max_tokens=8191
+10:57:52,710 httpx INFO HTTP Request: POST https://group2resources.openai.azure.com/openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:57:52,723 httpx INFO HTTP Request: POST https://group2resources.openai.azure.com/openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:57:52,725 httpx INFO HTTP Request: POST https://group2resources.openai.azure.com/openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:57:52,778 httpx INFO HTTP Request: POST https://group2resources.openai.azure.com/openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:57:53,160 httpx INFO HTTP Request: POST https://group2resources.openai.azure.com/openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:57:53,160 httpx INFO HTTP Request: POST https://group2resources.openai.azure.com/openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:57:53,176 httpx INFO HTTP Request: POST https://group2resources.openai.azure.com/openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:57:53,179 httpx INFO HTTP Request: POST https://group2resources.openai.azure.com/openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:57:53,182 httpx INFO HTTP Request: POST https://group2resources.openai.azure.com/openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:57:53,195 httpx INFO HTTP Request: POST https://group2resources.openai.azure.com/openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:57:53,196 httpx INFO HTTP Request: POST https://group2resources.openai.azure.com/openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:57:53,200 httpx INFO HTTP Request: POST https://group2resources.openai.azure.com/openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:57:53,202 httpx INFO HTTP Request: POST https://group2resources.openai.azure.com/openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:57:53,605 httpx INFO HTTP Request: POST https://group2resources.openai.azure.com/openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:57:53,607 httpx INFO HTTP Request: POST https://group2resources.openai.azure.com/openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:57:53,644 httpx INFO HTTP Request: POST https://group2resources.openai.azure.com/openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:57:54,211 httpx INFO HTTP Request: POST https://group2resources.openai.azure.com/openai/deployments/text-embedding-3-small/embeddings?api-version=2024-02-15-preview "HTTP/1.1 200 OK"
+10:57:54,752 graphrag.cli.index INFO All workflows completed successfully.
