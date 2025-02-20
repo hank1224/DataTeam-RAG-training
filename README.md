@@ -27,3 +27,9 @@ MultiHop + RAG + Agent 實作，主題為`民法問題解決Agent`。
 Knowledge Graph RAG and Evaluation 實作。
 
 [GraphRAG-Evaluation README](./0117-GraphRAG-Evaluation/README.md)
+
+## 0221-TA-teaching-materials
+
+全英文編寫的 Colab，僅限教學用途！
+
+RAG and fine-tune tutorial.

@@ -1,0 +1,922 @@
+[
+    {
+        "question": "What is the purpose of Trump's proposed tariffs on Taiwanese semiconductors?",
+        "answer": "Trump's proposed tariffs aim to force Taiwan Semiconductor Manufacturing Co (TSMC) to the negotiating table and encourage chip production to move to the US."
+    },
+    {
+        "question": "What were the proposed tariff rates mentioned by Trump for Taiwanese semiconductors?",
+        "answer": "Trump mentioned potential tariffs of 25%, 50%, or even 100% on Taiwanese semiconductors."
+    },
+    {
+        "question": "Why is TSMC considered a price-setter in the semiconductor market?",
+        "answer": "TSMC is considered a price-setter because its orders are at full capacity, demand for high-end chips exceeds supply, and there are no viable substitutes."
+    },
+    {
+        "question": "What impact could higher tariffs on TSMC chips have on US importers and consumers?",
+        "answer": "Higher tariffs on TSMC chips could increase costs for US importers, potentially leading to inflation and higher prices for domestic consumers."
+    },
+    {
+        "question": "Why are TSMC's chips difficult to replace in the market?",
+        "answer": "TSMC's chips are difficult to replace because even companies like Intel struggle to produce equivalent chips."
+    },
+    {
+        "question": "What does Darson Chiu believe is the real intention behind Trump's tariff proposal?",
+        "answer": "Darson Chiu believes Trump's real intention is to force TSMC to the negotiating table rather than to harm the competitiveness of the US AI sector."
+    },
+    {
+        "question": "What does Hsieh Chin-ho believe Trump hopes to achieve with pressure on TSMC?",
+        "answer": "Hsieh Chin-ho believes Trump hopes to pressure TSMC into increasing its investment in the US."
+    },
+    {
+        "question": "What could be the consequences if tariffs were extended to a broader category of semiconductor products, according to Tim Culpan?",
+        "answer": "Tim Culpan warned that extending tariffs to a broader category of semiconductor products could be disastrous, as the US lacks the capacity to manufacture equivalent volumes of these devices."
+    },
+    {
+        "question": "Why would it take months or years for the US to match TSMC's production capabilities, according to Tim Culpan?",
+        "answer": "It would take months or years to build factories, set up tools, and complete the qualification process to match TSMC's production capabilities."
+    },
+    {
+        "question": "Who does Tim Culpan believe would be the biggest victims of a tariff hike on TSMC chips?",
+        "answer": "Tim Culpan believes the biggest victims would be Larry Ellison, Sam Altman, and Masayoshi Son, who lead Oracle Corp, OpenAI, and Softbank Group Corp respectively."
+    },
+    {
+        "question": "Why would TSMC not suffer the most from a tariff hike, according to Tim Culpan?",
+        "answer": "TSMC would not suffer the most because it is capacity-constrained in advanced-packaging for AI chips, and its clients have no other choice."
+    },
+    {
+        "question": "What does Tim Culpan suggest Trump wants from TSMC beyond tariffs?",
+        "answer": "Tim Culpan suggests that Trump wants TSMC to pledge to invest more in the US."
+    },
+    {
+        "question": "What role does AI play in the demand for TSMC's chips, according to Darson Chiu?",
+        "answer": "The rise of artificial intelligence has increased the demand for high-end chips, which exceeds supply, contributing to TSMC's full capacity."
+    },
+    {
+        "question": "Why does Darson Chiu argue that Trump's advisors would have considered the impact of tariffs on the US AI sector?",
+        "answer": "Darson Chiu argues that Trump's advisors are respected economic academics who would not introduce a tariff policy without considering its impact on the competitiveness of the US AI sector."
+    },
+    {
+        "question": "What is the title of Tim Culpan's opinion piece, and what does it imply about the US imposing tariffs on TSMC?",
+        "answer": "The title of Tim Culpan's opinion piece is 'How a TSMC Tax Would be a FAFO Move for the US,' implying that imposing tariffs on TSMC could backfire on the US."
+    },
+    {
+        "question": "What did Trump say would serve as an incentive for TSMC to negotiate?",
+        "answer": "Trump said the incentive would be that TSMC would not want to pay a 25%, 50%, or 100% tax."
+    },
+    {
+        "question": "What role does TSMC play in the global semiconductor industry?",
+        "answer": "TSMC is the world's largest contract chipmaker and a critical supplier of high-end semiconductors."
+    },
+    {
+        "question": "How does the demand for AI chips affect TSMC's production capacity?",
+        "answer": "The demand for AI chips has pushed TSMC's production to full capacity, with demand exceeding supply."
+    },
+    {
+        "question": "Why would US importers have no choice but to pay higher tariffs on TSMC chips?",
+        "answer": "US importers would have no choice because there are no viable substitutes for TSMC's chips, and even Intel struggles to produce them."
+    },
+    {
+        "question": "What distinguishes TSMC's chips from other products affected by US tariffs, such as plastics?",
+        "answer": "Unlike plastics, which can be sourced from alternative suppliers like Vietnam, TSMC's chips cannot be easily replaced."
+    },
+    {
+        "question": "What is Darson Chiu's position at Tunghai University?",
+        "answer": "Darson Chiu is an economics professor at Tunghai University."
+    },
+    {
+        "question": "What organization is Darson Chiu associated with besides Tunghai University?",
+        "answer": "Darson Chiu is also the director-general of the Taipei-based Confederation of Asia-Pacific Chambers of Commerce and Industry."
+    },
+    {
+        "question": "According to Hsieh Chin-ho, how should TSMC respond to the Trump administration's pressure?",
+        "answer": "Hsieh Chin-ho believes TSMC should extend goodwill toward the Trump administration."
+    },
+    {
+        "question": "What does Hsieh Chin-ho suggest Trump hopes to achieve by pressuring TSMC?",
+        "answer": "Hsieh Chin-ho suggests that Trump hopes to pressure TSMC into increasing its investments in the US."
+    },
+    {
+        "question": "What does Tim Culpan say about the US manufacturing capacity for semiconductors?",
+        "answer": "Tim Culpan states that the US does not have the capacity to manufacture anywhere near the volume of equivalent devices produced by TSMC."
+    },
+    {
+        "question": "How long does Tim Culpan estimate it would take for the US to build equivalent semiconductor production capabilities?",
+        "answer": "Tim Culpan estimates it would take months, if not years, to build factories, spin up tools, and complete the qualification process."
+    },
+    {
+        "question": "Who are the three individuals Tim Culpan mentions as potential victims of a tariff hike on TSMC chips?",
+        "answer": "The three individuals are Larry Ellison, Sam Altman, and Masayoshi Son."
+    },
+    {
+        "question": "What companies are led by Larry Ellison, Sam Altman, and Masayoshi Son?",
+        "answer": "Larry Ellison leads Oracle Corp, Sam Altman leads OpenAI, and Masayoshi Son leads Softbank Group Corp."
+    },
+    {
+        "question": "What is the main argument in Tim Culpan's opinion piece about a TSMC tax?",
+        "answer": "Tim Culpan argues that a TSMC tax would harm US companies and delay semiconductor production, making it a counterproductive move."
+    },
+    {
+        "question": "What does Tim Culpan imply about Trump's intentions toward TSMC in his opinion piece?",
+        "answer": "Tim Culpan implies that Trump wants TSMC to pledge more investment in the US rather than simply imposing tariffs for punitive reasons."
+    },
+    {
+        "question": "What did Trump say during his speech to Republicans on January 27 regarding Taiwanese semiconductors?",
+        "answer": "Trump said he intends to impose tariffs on Taiwan to bring chip production to the US."
+    },
+    {
+        "question": "Why does Darson Chiu believe US importers would end up paying higher tariffs on TSMC chips?",
+        "answer": "Darson Chiu believes US importers would have no choice but to pay higher tariffs because TSMC's chips cannot be easily replaced, and there are no viable substitutes."
+    },
+    {
+        "question": "What specific challenge does Intel face in producing chips similar to TSMC's?",
+        "answer": "Intel struggles to produce chips that are equivalent to TSMC's in terms of quality and capability."
+    },
+    {
+        "question": "What economic issue could arise in the US due to higher tariffs on TSMC chips?",
+        "answer": "Higher tariffs on TSMC chips could lead to inflation as the additional costs are passed on to consumers."
+    },
+    {
+        "question": "Why does Darson Chiu think Trump's economic advisers would not introduce tariffs without careful consideration?",
+        "answer": "Darson Chiu believes Trump's advisers are respected economic academics who would consider the impact of tariffs on the competitiveness of the US AI sector."
+    },
+    {
+        "question": "What does Hsieh Chin-ho suggest TSMC should do in response to Trump's actions?",
+        "answer": "Hsieh Chin-ho suggests that TSMC should show goodwill and consider increasing its investment in the US."
+    },
+    {
+        "question": "What potential broader impact could tariffs on semiconductor products have, according to Tim Culpan?",
+        "answer": "Tim Culpan warns that tariffs on broader semiconductor products like GPUs, modules, and subsystems could result in disastrous consequences for the US."
+    },
+    {
+        "question": "What does Tim Culpan say about the time required for the US to build semiconductor factories?",
+        "answer": "Tim Culpan says it would take months, if not years, to build factories, set up tools, and complete the qualification process."
+    },
+    {
+        "question": "What is TSMC's position in the market for advanced-packaging AI chips?",
+        "answer": "TSMC is capacity-constrained in advanced-packaging for AI chips, and its clients have no other choice but to rely on its production."
+    },
+    {
+        "question": "How does Tim Culpan describe the potential victims of a TSMC tariff hike?",
+        "answer": "Tim Culpan describes Larry Ellison, Sam Altman, and Masayoshi Son as the biggest victims of a TSMC tariff hike, as their companies rely on TSMC's chips."
+    },
+    {
+        "question": "What industries could be affected by tariffs on TSMC chips, according to the article?",
+        "answer": "Industries relying on AI, GPUs, and other advanced semiconductor technologies could be affected by tariffs on TSMC chips."
+    },
+    {
+        "question": "What does Darson Chiu say about the relationship between TSMC's pricing power and tariffs?",
+        "answer": "Darson Chiu says that as a price-setter, TSMC's pricing power means that higher tariffs would increase costs for US importers, which would ultimately affect consumers."
+    },
+    {
+        "question": "What does Tim Culpan suggest about the broader implications of taxing Taiwanese chips?",
+        "answer": "Tim Culpan suggests that taxing Taiwanese chips could harm US companies and delay technological advancements in the US."
+    },
+    {
+        "question": "What is the title of Tim Culpan's opinion piece, and what does it imply about the proposed tariffs?",
+        "answer": "The title of Tim Culpan's opinion piece is 'How a TSMC Tax Would be a FAFO Move for the US,' implying that the tariffs could be a reckless or self-defeating decision."
+    },
+    {
+        "question": "What does Tim Culpan believe Trump ultimately wants from TSMC?",
+        "answer": "Tim Culpan believes Trump ultimately wants TSMC to pledge more investment in the US rather than suffer from the tariffs themselves."
+    },
+
+
+
+
+
+    {
+        "question": "What is the age range for Instagram's new 'Teen Accounts' feature?",
+        "answer": "The 'Teen Accounts' feature is designed for users aged 13 to 17."
+    },
+    {
+        "question": "What is the default profile setting for users under 16 on Instagram's 'Teen Accounts'?",
+        "answer": "The default profile setting for users under 16 is private."
+    },
+    {
+        "question": "What is required for teenagers to create a public profile on Instagram under the new rules?",
+        "answer": "Parental permission is required to create a public profile."
+    },
+    {
+        "question": "What is the main purpose of private accounts on Instagram for teenagers?",
+        "answer": "Private accounts only allow users who have been accepted as 'followers' to interact with the account or view their information."
+    },
+    {
+        "question": "Does the new 'Teen Accounts' policy apply to both new and existing accounts?",
+        "answer": "Yes, the policy applies to both new and existing accounts."
+    },
+    {
+        "question": "What happens to the profiles of 16 and 17-year-olds who open new accounts under the 'Teen Accounts' feature?",
+        "answer": "Their profiles are automatically set to private, but they can choose to switch to public profiles."
+    },
+    {
+        "question": "What safety concerns are addressed by Instagram's 'Teen Accounts' feature?",
+        "answer": "The feature addresses concerns about prolonged app use, viewing sensitive information, and messaging strangers."
+    },
+    {
+        "question": "How does Instagram ensure minors do not bypass the new 'Teen Accounts' measures by giving an incorrect date of birth?",
+        "answer": "Instagram requires minors to undergo age verification checks."
+    },
+    {
+        "question": "What type of content is filtered out from the 'explore' page and Reels for 'Teen Accounts'?",
+        "answer": "Sensitive or graphic images, including violent content and promotions of plastic surgery, are filtered out."
+    },
+    {
+        "question": "What notification is sent to users after 60 minutes of app usage in a day under 'Teen Accounts'?",
+        "answer": "A notification is sent to close the application."
+    },
+    {
+        "question": "What happens to 'Teen Accounts' between 10pm and 7am?",
+        "answer": "The accounts automatically switch to 'sleep mode,' silencing notifications, sending automatic replies, and displaying reminders to close the app."
+    },
+    {
+        "question": "What does 'sleep mode' do on Instagram's 'Teen Accounts'?",
+        "answer": "'Sleep mode' silences notifications, sends automatic message replies, and displays reminders to close the app."
+    },
+    {
+        "question": "How will Meta notify existing teenage accounts about the transition to 'Teen Accounts'?",
+        "answer": "Meta will notify existing accounts before they are switched to 'Teen Accounts' as the measures are gradually rolled out."
+    },
+    {
+        "question": "What regions are included in the rollout of Instagram's 'Teen Accounts' feature?",
+        "answer": "The rollout includes the Asia-Pacific region."
+    },
+    {
+        "question": "What is one of the measures Instagram uses to manage teenagers' prolonged app usage?",
+        "answer": "Instagram sends a notification to close the app after 60 minutes of usage in a day."
+    },
+    {
+        "question": "When did Instagram's 'Teen Accounts' feature go live in Taiwan?",
+        "answer": "The 'Teen Accounts' feature went live in Taiwan on the day of the news release."
+    },
+    {
+        "question": "Why has Instagram introduced the 'Teen Accounts' feature?",
+        "answer": "Instagram introduced 'Teen Accounts' to address parental concerns about teenagers' app usage, exposure to sensitive content, and interactions with strangers."
+    },
+    {
+        "question": "What happens if a teenager provides an incorrect date of birth on Instagram?",
+        "answer": "Instagram requires minors to undergo age verification checks to prevent them from bypassing the new measures."
+    },
+    {
+        "question": "What types of content are restricted on the 'explore' page for 'Teen Accounts'?",
+        "answer": "Content such as violent images and promotions of plastic surgery is restricted."
+    },
+    {
+        "question": "What will Instagram do to existing accounts as part of the 'Teen Accounts' rollout?",
+        "answer": "Instagram will notify existing accounts before switching them to 'Teen Accounts.'"
+    },
+    {
+        "question": "How does Instagram ensure that teenagers are aware of their app usage time?",
+        "answer": "Instagram sends a notification after 60 minutes of app usage in a day."
+    },
+    {
+        "question": "What is the purpose of the 'sleep mode' feature in 'Teen Accounts'?",
+        "answer": "The 'sleep mode' feature helps manage app usage by silencing notifications, sending automatic replies, and reminding users to close the app between 10pm and 7am."
+    },
+    {
+        "question": "Can teenagers aged 16 and 17 switch their private accounts to public under the new rules?",
+        "answer": "Yes, teenagers aged 16 and 17 can choose to switch their private accounts to public."
+    },
+    {
+        "question": "What is the default setting for new Instagram accounts created by teenagers under the age of 16?",
+        "answer": "The default setting for new accounts is private."
+    },
+    {
+        "question": "How does Instagram plan to roll out the 'Teen Accounts' feature across the Asia-Pacific region?",
+        "answer": "Instagram is gradually rolling out the feature and notifying users in advance."
+    },
+    {
+        "question": "What measures are in place to limit teenagers' exposure to sensitive content on Instagram?",
+        "answer": "Sensitive or graphic images, such as violent content and plastic surgery promotions, are filtered out from the 'explore' page and Reels."
+    },
+    {
+        "question": "What happens to notifications on 'Teen Accounts' during 'sleep mode' hours?",
+        "answer": "Notifications are silenced during 'sleep mode' hours."
+    },
+    {
+        "question": "What is the goal of the age verification checks for minors on Instagram?",
+        "answer": "The goal is to prevent minors from bypassing the new safety measures by providing an incorrect date of birth."
+    },
+    {
+        "question": "How does the 'Teen Accounts' feature address concerns about messaging strangers?",
+        "answer": "The feature includes safety measures to limit teenagers' ability to message strangers."
+    },
+    {
+        "question": "What reminder does Instagram provide to teenagers during prolonged usage?",
+        "answer": "Instagram sends a reminder notification to close the app after 60 minutes of daily usage."
+    },
+    {
+        "question": "What is the default privacy setting for teenagers under 16 on Instagram?",
+        "answer": "Their accounts are set to private by default."
+    },
+    {
+        "question": "What is the purpose of private accounts for teenagers on Instagram?",
+        "answer": "Private accounts ensure that only approved followers can interact with or view the teenager's information."
+    },
+    {
+        "question": "What needs to happen before an existing account is switched to a 'Teen Account'?",
+        "answer": "Meta will notify the account holder before the switch."
+    },
+    {
+        "question": "What type of images are filtered from Reels for 'Teen Accounts'?",
+        "answer": "Sensitive or graphic images, including violent content and plastic surgery promotions, are filtered."
+    },
+    {
+        "question": "What happens after a teenager spends 60 minutes on Instagram in a single day?",
+        "answer": "A notification is sent to the user to close the application."
+    },
+    {
+        "question": "What are the operating hours of 'sleep mode' in Instagram's 'Teen Accounts'?",
+        "answer": "'Sleep mode' operates between 10pm and 7am."
+    },
+    {
+        "question": "What happens to notifications during 'sleep mode' on 'Teen Accounts'?",
+        "answer": "Notifications are silenced during 'sleep mode.'"
+    },
+    {
+        "question": "How does Instagram address concerns about teenagers accessing inappropriate content?",
+        "answer": "Sensitive content is filtered from the 'explore' page and Reels for 'Teen Accounts.'"
+    },
+    {
+        "question": "What safety feature helps limit teenagers' interactions with strangers on Instagram?",
+        "answer": "The 'Teen Accounts' feature includes measures to restrict messaging strangers."
+    },
+    {
+        "question": "What is the purpose of Instagram's age verification checks for minors?",
+        "answer": "The checks ensure that minors cannot bypass the safety features by providing a false date of birth."
+    },
+    {
+        "question": "How does Instagram help parents manage their teenagers' app usage?",
+        "answer": "Features like 'sleep mode,' usage notifications, and private accounts help address parental concerns."
+    },
+    {
+        "question": "What are teenagers reminded to do during 'sleep mode' hours?",
+        "answer": "Teenagers are reminded to close the app during 'sleep mode' hours."
+    },
+    {
+        "question": "What happens to new accounts created by 16- and 17-year-olds under the 'Teen Accounts' policy?",
+        "answer": "Their accounts are automatically set to private, but they can choose to make them public."
+    },
+    {
+        "question": "How does Instagram notify users about the upcoming changes to their accounts?",
+        "answer": "Meta sends notifications to users before their accounts are switched to 'Teen Accounts.'"
+    },
+    {
+        "question": "What region is included in the rollout of Instagram's 'Teen Accounts' this week?",
+        "answer": "The Asia-Pacific region is included in the rollout."
+    },
+
+
+
+
+
+    {
+        "question": "Who was elected the 47th president of the United States?",
+        "answer": "Donald Trump was elected the 47th president of the United States."
+    },
+    {
+        "question": "How many electoral votes did Donald Trump secure to win the presidency?",
+        "answer": "Donald Trump secured 277 electoral votes to win the presidency."
+    },
+    {
+        "question": "What percentage of the nationwide vote did Donald Trump receive?",
+        "answer": "Donald Trump received 51 percent of the nationwide vote."
+    },
+    {
+        "question": "Who was the Democratic Party’s nominee in this election?",
+        "answer": "The Democratic Party’s nominee was US Vice President Kamala Harris."
+    },
+    {
+        "question": "What was the total number of votes Kamala Harris received nationwide?",
+        "answer": "Kamala Harris received 66,360,324 votes nationwide."
+    },
+    {
+        "question": "In what state did Donald Trump clear the 270 electoral votes needed to win?",
+        "answer": "Donald Trump cleared the 270 electoral votes needed to win in Wisconsin."
+    },
+    {
+        "question": "What did Donald Trump promise in his victory speech in Florida?",
+        "answer": "Donald Trump promised to pursue an agenda centered on dramatically reshaping the federal government and securing the border."
+    },
+    {
+        "question": "What challenges did Kamala Harris face during her campaign?",
+        "answer": "Kamala Harris faced challenges during her campaign due to a compressed timeline and difficulty convincing voters that she represented a break from an unpopular administration."
+    },
+    {
+        "question": "What historical milestone did Donald Trump achieve with this election victory?",
+        "answer": "Donald Trump became the first former US president to return to power since Grover Cleveland in 1892."
+    },
+    {
+        "question": "What legal issues has Donald Trump faced prior to being elected president again?",
+        "answer": "Donald Trump was convicted of 34 felony charges, found liable in two New York civil cases, and faces additional criminal charges in Georgia and at the federal level."
+    },
+    {
+        "question": "Who is Donald Trump’s running mate, and what is significant about him?",
+        "answer": "Donald Trump’s running mate is US Senator J.D. Vance, who is set to become the highest-ranking member of the millennial generation in the US government."
+    },
+    {
+        "question": "What did President William Lai say in his congratulatory message to Donald Trump?",
+        "answer": "President William Lai congratulated Donald Trump and expressed confidence that the Taiwan-US partnership would continue to promote regional stability and prosperity."
+    },
+    {
+        "question": "What platform did President William Lai use to congratulate Donald Trump?",
+        "answer": "President William Lai used X (formerly Twitter) to congratulate Donald Trump."
+    },
+    {
+        "question": "What did the Ministry of Foreign Affairs do in response to Donald Trump’s victory?",
+        "answer": "The Ministry of Foreign Affairs congratulated Donald Trump and J.D. Vance on their victory."
+    },
+    {
+        "question": "What were the unresolved states as of press time in the election results?",
+        "answer": "The unresolved states as of press time were Alaska, Arizona, Maine, Michigan, and Nevada."
+    },
+    {
+        "question": "What event marked Donald Trump’s extraordinary political comeback?",
+        "answer": "Donald Trump’s election as the 47th president of the United States marked his extraordinary political comeback."
+    },
+    {
+        "question": "What was the margin of popular vote percentage between Donald Trump and Kamala Harris?",
+        "answer": "Donald Trump had a margin of 3.5 percent over Kamala Harris in the popular vote."
+    },
+    {
+        "question": "What did Donald Trump say to his supporters after his victory?",
+        "answer": "Donald Trump thanked his supporters, saying, 'We’ve been through so much together and today you showed up in record numbers to deliver a victory.'"
+    },
+    {
+        "question": "How many assassination attempts did Donald Trump survive during the election season?",
+        "answer": "Donald Trump survived two assassination attempts during the election season."
+    },
+    {
+        "question": "Which states had not finalized their results as of press time?",
+        "answer": "As of press time, Alaska, Arizona, Maine, Michigan, and Nevada had not finalized their results."
+    },
+    {
+        "question": "What was Kamala Harris’s role in the election?",
+        "answer": "Kamala Harris was the Democratic Party’s nominee and the US Vice President at the time."
+    },
+    {
+        "question": "What was the outcome of Kamala Harris’s campaign after taking over the ticket from Joe Biden?",
+        "answer": "Kamala Harris’s campaign struggled to convince voters that she represented a break from an unpopular administration."
+    },
+    {
+        "question": "What is significant about Donald Trump’s felony conviction in relation to his presidency?",
+        "answer": "Donald Trump is the first person convicted of a felony to be elected president."
+    },
+    {
+        "question": "What charges was Donald Trump convicted of in May?",
+        "answer": "Donald Trump was convicted of 34 felony charges related to a scheme to illegally influence the 2016 election."
+    },
+    {
+        "question": "What additional legal challenges does Donald Trump face beyond his felony conviction?",
+        "answer": "Donald Trump faces additional criminal charges in Georgia for election interference and federal charges for attempting to overturn the 2020 election and mishandling classified materials."
+    },
+    {
+        "question": "What role will J.D. Vance, Trump’s running mate, play in the US government?",
+        "answer": "J.D. Vance will become the highest-ranking member of the millennial generation in the US government."
+    },
+    {
+        "question": "What did Donald Trump emphasize about voter turnout in his victory speech?",
+        "answer": "Donald Trump emphasized that voters showed up in record numbers to deliver his victory."
+    },
+    {
+        "question": "What historical precedent did Donald Trump set with his election victory?",
+        "answer": "Donald Trump became the first former US president to return to power since Grover Cleveland in 1892."
+    },
+    {
+        "question": "What did Cedric Richmond announce about Kamala Harris after the election results were called?",
+        "answer": "Cedric Richmond announced that Kamala Harris would speak later that day."
+    },
+    {
+        "question": "What was the Ministry of Foreign Affairs’ response to Trump’s victory?",
+        "answer": "The Ministry of Foreign Affairs congratulated both Donald Trump and J.D. Vance on their victory."
+    },
+    {
+        "question": "What was the total number of votes Donald Trump received nationwide?",
+        "answer": "Donald Trump received 71,289,216 votes nationwide."
+    },
+    {
+        "question": "What did Donald Trump promise to do as president?",
+        "answer": "Donald Trump promised to pursue an agenda centered on dramatically reshaping the federal government and securing the border."
+    },
+    {
+        "question": "What was the result of Kamala Harris’s efforts to distance her campaign from the previous administration?",
+        "answer": "Kamala Harris’s campaign struggled to convince voters that she represented a break from the unpopular Biden administration."
+    },
+    {
+        "question": "What historical comparison was made regarding Donald Trump’s return to the presidency?",
+        "answer": "Donald Trump’s return to the presidency was compared to Grover Cleveland, who regained the White House in 1892."
+    },
+    {
+        "question": "What did Donald Trump say about the election victory being 'special'?",
+        "answer": "Donald Trump said, 'This was something special and we’re going to pay you back,' referring to his supporters."
+    },
+    {
+        "question": "What was Kamala Harris’s status after the election results were called?",
+        "answer": "Kamala Harris had not publicly spoken since the election results were called."
+    },
+    {
+        "question": "What was the outcome of the Associated Press tally as of press time?",
+        "answer": "The Associated Press tally as of press time had Donald Trump at 277 electoral votes and Kamala Harris at 224."
+    },
+    {
+        "question": "What did Cedric Richmond say about Kamala Harris’s post-election plans?",
+        "answer": "Cedric Richmond said that Kamala Harris would speak later on the day the results were announced."
+    },
+    {
+        "question": "What criminal charges is Donald Trump facing at the federal level?",
+        "answer": "Donald Trump is facing federal charges for attempting to overturn the 2020 election results and improperly handling classified materials."
+    },
+    {
+        "question": "What was the voter turnout percentage for Kamala Harris in the election?",
+        "answer": "Kamala Harris received 47.5 percent of the nationwide vote."
+    },
+    {
+        "question": "What did President William Lai emphasize about the Taiwan-US partnership in his congratulatory message?",
+        "answer": "President William Lai emphasized that the Taiwan-US partnership, built on shared values and interests, would continue to promote regional stability and prosperity."
+    },
+    {
+        "question": "How many felony charges was Donald Trump convicted of in New York?",
+        "answer": "Donald Trump was convicted of 34 felony charges in New York."
+    },
+    {
+        "question": "What additional civil cases has Donald Trump been found liable for in New York?",
+        "answer": "Donald Trump has been found liable in two additional civil cases in New York."
+    },
+    {
+        "question": "What did the election results signify about voter turnout?",
+        "answer": "The election results signified that voters turned out in record numbers, according to Donald Trump."
+    },
+    {
+        "question": "What was the compressed timeline that Kamala Harris faced during her campaign?",
+        "answer": "Kamala Harris faced a compressed timeline after taking over the Democratic ticket just a month before the party’s national convention."
+    },
+
+
+
+
+
+    {
+        "question": "Which team won the U-12 Asian Baseball Championship in Matsuyama, Japan?",
+        "answer": "Team Taiwan won the U-12 Asian Baseball Championship in Matsuyama, Japan."
+    },
+    {
+        "question": "What was the final score in the championship game between Taiwan and South Korea?",
+        "answer": "The final score was 5-1, with Taiwan defeating South Korea."
+    },
+    {
+        "question": "How many U-12 Asian Baseball Championship titles has Team Taiwan won in total?",
+        "answer": "Team Taiwan has won eight U-12 Asian Baseball Championship titles in total."
+    },
+    {
+        "question": "How did Taiwan perform in division B of the tournament?",
+        "answer": "Taiwan secured two wins and one loss to finish second in division B, losing only to South Korea 0-1."
+    },
+    {
+        "question": "What was the result of Taiwan's game against China on Wednesday?",
+        "answer": "Taiwan defeated China 16-0 on Wednesday."
+    },
+    {
+        "question": "Who scored the first run for Taiwan in the final against South Korea?",
+        "answer": "Su Yu-hsiang scored the first run for Taiwan in the final against South Korea."
+    },
+    {
+        "question": "What role did Lin Wei-yen play in Taiwan's first run during the final?",
+        "answer": "Lin Wei-yen bunted, allowing Su Yu-hsiang to cross home plate for Taiwan's first run."
+    },
+    {
+        "question": "How did Taiwan achieve their fourth run in the final game?",
+        "answer": "Yang Nian-hsien's hit and subsequent base steal caused the catcher to fumble, allowing Chou Chen-chuan to bring home the fourth run."
+    },
+    {
+        "question": "How many hits did Taiwan pitcher Huang Li-huan give up during the final?",
+        "answer": "Huang Li-huan gave up only four hits during the final."
+    },
+    {
+        "question": "How many pitches did Taiwan pitcher Huang Li-huan throw in the final?",
+        "answer": "Huang Li-huan threw 77 pitches in the final."
+    },
+    {
+        "question": "What notable achievement did Taiwan secure in the U-12 Asian Baseball Championship since 2014?",
+        "answer": "Taiwan has won gold in three out of the four championships since 2014."
+    },
+    {
+        "question": "What event has Taiwan qualified for after winning the U-12 Asian Baseball Championship?",
+        "answer": "Taiwan has qualified for the World Baseball Softball Conference U-12 Baseball World Cup to be held in Tainan next year."
+    },
+    {
+        "question": "What was the result of the bronze medal game between Japan and China?",
+        "answer": "Japan defeated China 10-0 in the bronze medal game."
+    },
+    {
+        "question": "How did Japan's pitchers perform in the bronze medal game against China?",
+        "answer": "All three Japan pitchers ensured that no China player made a hit throughout the six-inning game."
+    },
+    {
+        "question": "What happened to Taiwan's six-championship winning streak in 2012?",
+        "answer": "Taiwan missed the chance to maintain their six-championship winning streak in 2012 when they came second."
+    },
+    {
+        "question": "Where was the U-12 Asian Baseball Championship held this year?",
+        "answer": "The U-12 Asian Baseball Championship was held in Matsuyama, Japan."
+    },
+    {
+        "question": "What was the result of Taiwan’s game against Japan on Thursday?",
+        "answer": "Taiwan edged Japan 1-0 on Thursday to reach the final."
+    },
+    {
+        "question": "Who scored Taiwan’s second run in the final against South Korea?",
+        "answer": "Lin Wei-yen scored Taiwan’s second run in the final."
+    },
+    {
+        "question": "Which Taiwanese player hit a two-base hit to bring home the fourth run in the final?",
+        "answer": "Chou Chen-chuan hit a two-base hit to bring home the fourth run in the final."
+    },
+    {
+        "question": "What action by South Korea’s pitcher allowed Su Yu-hsiang to steal second base in the final?",
+        "answer": "A wild pitch by South Korea's pitcher allowed Su Yu-hsiang to steal second base."
+    },
+    {
+        "question": "Which Taiwanese player brought Yang Nian-hsien home with a two-base hit in the final?",
+        "answer": "Yang Po-hsun brought Yang Nian-hsien home with a two-base hit in the final."
+    },
+    {
+        "question": "How many championships has Taiwan won consecutively in the U-12 Asian Baseball Championship?",
+        "answer": "Taiwan has won two consecutive championships in the U-12 Asian Baseball Championship."
+    },
+    {
+        "question": "What was the score of Taiwan’s loss to South Korea in division B?",
+        "answer": "Taiwan lost to South Korea 0-1 in division B."
+    },
+    {
+        "question": "What was the weather-related delay before the final game between Taiwan and South Korea?",
+        "answer": "The final game was delayed by one hour due to rain."
+    },
+    {
+        "question": "Which Taiwanese player hit a two-base hit that allowed Sung Yi-le to cross home plate in the final?",
+        "answer": "Chou Chen-chuan hit a two-base hit that allowed Sung Yi-le to cross home plate in the final."
+    },
+    {
+        "question": "How did Taiwan’s pitcher Huang Li-huan handle the pressure in the bottom half of the first inning?",
+        "answer": "Despite feeling stress in the bottom half of the first inning, Huang Li-huan pitched all six innings effectively."
+    },
+    {
+        "question": "How many hits did Taiwan give up during the final game against South Korea?",
+        "answer": "Taiwan gave up only four hits during the final game against South Korea."
+    },
+    {
+        "question": "What was the outcome of the bronze medal match for the U-12 Asian Baseball Championship?",
+        "answer": "Japan won the bronze medal match, defeating China 10-0."
+    },
+    {
+        "question": "Which team failed to make any hits during the bronze medal game?",
+        "answer": "China failed to make any hits during the bronze medal game."
+    },
+    {
+        "question": "What major baseball event is Taiwan set to host next year after their U-12 championship win?",
+        "answer": "Taiwan is set to host the World Baseball Softball Conference U-12 Baseball World Cup in Tainan next year."
+    },
+    {
+        "question": "What was Taiwan's overall record in division B of the U-12 Asian Baseball Championship?",
+        "answer": "Taiwan had two wins and one loss in division B of the U-12 Asian Baseball Championship."
+    },
+    {
+        "question": "Which team defeated Taiwan during the group stage of the U-12 Asian Baseball Championship?",
+        "answer": "South Korea defeated Taiwan during the group stage with a score of 0-1."
+    },
+    {
+        "question": "What was the score of Taiwan’s victory over China in the group stage?",
+        "answer": "Taiwan defeated China 16-0 in the group stage."
+    },
+    {
+        "question": "Which Taiwanese player successfully stole second base after being sent to first in the final?",
+        "answer": "Su Yu-hsiang successfully stole second base after being sent to first in the final."
+    },
+    {
+        "question": "How did Sung Yi-le contribute to Taiwan’s score in the final?",
+        "answer": "Sung Yi-le hit the ball to bring Lin Wei-yen home and later stole his way to second base before scoring on Chou Chen-chuan’s two-base hit."
+    },
+    {
+        "question": "What change did South Korea make after Taiwan’s early scoring in the final?",
+        "answer": "South Korea changed their pitcher to try to turn the tide after Taiwan’s early scoring."
+    },
+    {
+        "question": "How many innings did Taiwan pitcher Huang Li-huan pitch in the final?",
+        "answer": "Huang Li-huan pitched all six innings in the final."
+    },
+    {
+        "question": "What was Taiwan’s streak of consecutive U-12 Asian Baseball Championship titles before 2012?",
+        "answer": "Taiwan had a streak of six consecutive U-12 Asian Baseball Championship titles before 2012."
+    },
+    {
+        "question": "How many gold medals has Taiwan won in the U-12 Asian Baseball Championship since 2014?",
+        "answer": "Taiwan has won three gold medals in the U-12 Asian Baseball Championship since 2014."
+    },
+    {
+        "question": "Where will the World Baseball Softball Conference U-12 Baseball World Cup be held next year?",
+        "answer": "The World Baseball Softball Conference U-12 Baseball World Cup will be held in Tainan next year."
+    },
+    {
+        "question": "What was the result of Japan’s pitching performance in the bronze medal game?",
+        "answer": "Japan’s pitchers ensured that no China player made a hit during the bronze medal game."
+    },
+    {
+        "question": "How many runs did Japan score against China in the bronze medal game?",
+        "answer": "Japan scored 10 runs against China in the bronze medal game."
+    },
+    {
+        "question": "Which Taiwanese player scored Taiwan’s fifth run in the final against South Korea?",
+        "answer": "Yang Nian-hsien scored Taiwan’s fifth run in the final against South Korea."
+    },
+    {
+        "question": "What was the impact of South Korea’s wild pitches during the final?",
+        "answer": "South Korea’s wild pitches allowed Taiwanese players to steal bases and score runs, contributing to Taiwan’s victory."
+    },
+    {
+        "question": "How did Taiwan perform in the U-12 Asian Baseball Championship final compared to their group stage match against South Korea?",
+        "answer": "Taiwan lost 0-1 to South Korea in the group stage but defeated them 5-1 in the final."
+    },
+
+
+
+
+
+    {
+        "question": "What is DeepSeek, and why is it significant in the AI sector?",
+        "answer": "DeepSeek is a Chinese startup that has launched AI models claimed to be on par or better than industry-leading US models at a fraction of the cost, disrupting the global AI sector."
+    },
+    {
+        "question": "How much computing power did DeepSeek claim to use to train its DeepSeek-V3 model?",
+        "answer": "DeepSeek claimed to use less than US$6 million worth of computing power from Nvidia H800 chips to train its DeepSeek-V3 model."
+    },
+    {
+        "question": "Which application has overtaken ChatGPT to become the top-rated free app on Apple’s App Store in the US?",
+        "answer": "DeepSeek's AI Assistant, powered by DeepSeek-V3, has overtaken ChatGPT to become the top-rated free application on Apple’s App Store in the US."
+    },
+    {
+        "question": "What impact has DeepSeek’s success had on big tech companies like Nvidia?",
+        "answer": "DeepSeek’s success has raised doubts about US tech companies' massive AI investments, and shares of several big tech players, including Nvidia, have been negatively impacted."
+    },
+    {
+        "question": "What was the reaction in China after the release of Baidu’s first ChatGPT equivalent?",
+        "answer": "The release of Baidu’s first ChatGPT equivalent led to widespread disappointment in China due to the perceived gap in AI capabilities between US and Chinese firms."
+    },
+    {
+        "question": "What makes DeepSeek’s AI models stand out compared to competitors?",
+        "answer": "DeepSeek’s AI models, DeepSeek-V3 and DeepSeek-R1, are praised for being on par with OpenAI and Meta's models while being significantly cheaper to use."
+    },
+    {
+        "question": "How much cheaper is the DeepSeek-R1 model compared to OpenAI’s models?",
+        "answer": "The DeepSeek-R1 model is 20 to 50 times cheaper to use than OpenAI's models, depending on the task."
+    },
+    {
+        "question": "What skepticism has been expressed about DeepSeek’s claims?",
+        "answer": "Scale AI CEO Alexandr Wang claimed that DeepSeek has 50,000 Nvidia H100 chips, which would violate US export controls, and Bernstein analysts questioned the accuracy of DeepSeek's stated training costs."
+    },
+    {
+        "question": "Who is the controlling shareholder of DeepSeek?",
+        "answer": "The controlling shareholder of DeepSeek is Liang Wenfeng, co-founder of the quantitative hedge fund High-Flyer."
+    },
+    {
+        "question": "What shift in focus did High-Flyer announce in March 2023?",
+        "answer": "High-Flyer announced that it was shifting resources from trading to creating a new research group to explore the essence of Artificial General Intelligence (AGI)."
+    },
+    {
+        "question": "What is Artificial General Intelligence (AGI) as defined by OpenAI?",
+        "answer": "OpenAI defines AGI as autonomous systems that surpass humans in most economically valuable tasks."
+    },
+    {
+        "question": "What connection exists between High-Flyer and DeepSeek?",
+        "answer": "High-Flyer has an office in the same building as DeepSeek, owns patents related to chip clusters for training AI models, and operates a cluster of 10,000 A100 chips."
+    },
+    {
+        "question": "What event highlighted DeepSeek’s importance in China’s political circles?",
+        "answer": "DeepSeek’s founder Liang Wenfeng attended a closed-door symposium hosted by Chinese premier Li Qiang on Jan. 20, the day DeepSeek-R1 was released."
+    },
+    {
+        "question": "Why might Beijing view DeepSeek’s success as significant?",
+        "answer": "Beijing may view DeepSeek’s success as crucial to overcoming US export controls and achieving self-sufficiency in strategic industries like AI."
+    },
+    {
+        "question": "What previous symposium attendee highlights DeepSeek’s growing importance in China?",
+        "answer": "A similar symposium in the past was attended by Baidu CEO Robin Li, highlighting DeepSeek's growing importance in China’s AI landscape."
+    },
+    {
+        "question": "What is the main claim DeepSeek makes about its AI models?",
+        "answer": "DeepSeek claims its AI models are on par or better than industry-leading US models while being much more cost-efficient."
+    },
+    {
+        "question": "What recent milestone has DeepSeek’s AI Assistant achieved?",
+        "answer": "DeepSeek’s AI Assistant became the top-rated free application on Apple’s App Store in the US, overtaking ChatGPT."
+    },
+    {
+        "question": "What did DeepSeek say about the cost of training its DeepSeek-V3 model?",
+        "answer": "DeepSeek stated that training its DeepSeek-V3 model required less than US$6 million in computing power using Nvidia H800 chips."
+    },
+    {
+        "question": "What is the significance of DeepSeek’s cost efficiency compared to OpenAI?",
+        "answer": "DeepSeek’s DeepSeek-R1 model is 20 to 50 times cheaper to use than OpenAI’s models, depending on the task."
+    },
+    {
+        "question": "Which two AI models from DeepSeek have received praise from Silicon Valley executives?",
+        "answer": "DeepSeek-V3 and DeepSeek-R1 have been praised by Silicon Valley executives and US tech company engineers."
+    },
+    {
+        "question": "What doubts have been raised about DeepSeek’s claims regarding its training costs?",
+        "answer": "Bernstein analysts noted that the total training costs for DeepSeek-V3 and R1 were higher than the US$5.58 million claimed by the company."
+    },
+    {
+        "question": "What did Alexandr Wang allege about DeepSeek’s hardware resources?",
+        "answer": "Alexandr Wang alleged that DeepSeek has 50,000 Nvidia H100 chips, which would violate US export controls."
+    },
+    {
+        "question": "What was the state of Chinese AI after Baidu’s ChatGPT equivalent was released?",
+        "answer": "There was widespread disappointment in China due to the perceived gap in AI capabilities between Chinese and US firms."
+    },
+    {
+        "question": "How has DeepSeek flipped the narrative about Chinese AI capabilities?",
+        "answer": "DeepSeek’s cost-efficient and high-quality AI models have challenged the perception of a gap in AI capabilities between Chinese and US firms."
+    },
+    {
+        "question": "What is the connection between High-Flyer and DeepSeek?",
+        "answer": "High-Flyer, co-founded by DeepSeek’s controlling shareholder Liang Wenfeng, owns patents related to chip clusters and operates a cluster of 10,000 A100 chips."
+    },
+    {
+        "question": "What did High-Flyer announce in July 2022 about its AI capabilities?",
+        "answer": "High-Flyer announced that it owns and operates a cluster of 10,000 A100 chips, which are used to train AI models."
+    },
+    {
+        "question": "What is the Chinese government’s potential interest in DeepSeek’s success?",
+        "answer": "DeepSeek’s success aligns with Beijing’s goal of overcoming US export controls and achieving self-sufficiency in strategic industries like AI."
+    },
+    {
+        "question": "What role did Liang Wenfeng play in DeepSeek’s creation?",
+        "answer": "Liang Wenfeng, co-founder of High-Flyer, is the controlling shareholder of DeepSeek and played a key role in its establishment."
+    },
+    {
+        "question": "What is AGI, and how does it relate to DeepSeek’s goals?",
+        "answer": "Artificial General Intelligence (AGI) refers to autonomous systems that surpass humans in most economically valuable tasks, a goal aligned with DeepSeek’s research focus."
+    },
+    {
+        "question": "What political event highlighted DeepSeek’s growing influence in China?",
+        "answer": "DeepSeek founder Liang Wenfeng attended a closed-door symposium hosted by Chinese premier Li Qiang, signaling the company’s importance in China’s AI strategy."
+    },
+    {
+        "question": "What is the name of the Chinese startup disrupting the global AI sector?",
+        "answer": "The Chinese startup disrupting the global AI sector is DeepSeek."
+    },
+    {
+        "question": "How did DeepSeek’s AI models challenge the global AI narrative?",
+        "answer": "DeepSeek’s AI models, which are cost-efficient and high-quality, challenged the perception that Chinese AI capabilities lag behind US firms."
+    },
+    {
+        "question": "What AI models did DeepSeek release that gained international attention?",
+        "answer": "DeepSeek released DeepSeek-V3 and DeepSeek-R1, which gained international attention for their quality and cost efficiency."
+    },
+    {
+        "question": "What did Bernstein analysts say about DeepSeek’s training costs?",
+        "answer": "Bernstein analysts stated that the total training costs for DeepSeek-V3 and R1 were much higher than the US$5.58 million claimed by the company."
+    },
+    {
+        "question": "What hardware does High-Flyer reportedly operate for AI training?",
+        "answer": "High-Flyer reportedly operates a cluster of 10,000 A100 chips for AI training."
+    },
+    {
+        "question": "What is the relationship between Liang Wenfeng and High-Flyer?",
+        "answer": "Liang Wenfeng is the co-founder of High-Flyer and the controlling shareholder of DeepSeek."
+    },
+    {
+        "question": "What did Scale AI CEO Alexandr Wang allege about DeepSeek’s chip usage?",
+        "answer": "Alexandr Wang alleged that DeepSeek has 50,000 Nvidia H100 chips, which would violate US export controls."
+    },
+    {
+        "question": "Why has DeepSeek’s AI Assistant gained significant attention?",
+        "answer": "DeepSeek’s AI Assistant gained attention by becoming the top-rated free app on Apple’s App Store in the US, surpassing ChatGPT."
+    },
+    {
+        "question": "How does DeepSeek-R1 compare to OpenAI’s models in terms of cost?",
+        "answer": "DeepSeek-R1 is 20 to 50 times cheaper to use than OpenAI’s models, depending on the task."
+    },
+    {
+        "question": "What did High-Flyer announce in March 2023 regarding its focus?",
+        "answer": "High-Flyer announced that it was focusing on creating a new research group to explore Artificial General Intelligence (AGI)."
+    },
+    {
+        "question": "What political significance does DeepSeek’s success hold for China?",
+        "answer": "DeepSeek’s success supports China’s policy goal of overcoming US export controls and achieving self-sufficiency in strategic industries like AI."
+    },
+    {
+        "question": "What did DeepSeek claim about the cost of training its DeepSeek-V3 model?",
+        "answer": "DeepSeek claimed that training its DeepSeek-V3 model required less than US$6 million in computing power using Nvidia H800 chips."
+    },
+    {
+        "question": "What type of chips did DeepSeek reportedly use for training its models?",
+        "answer": "DeepSeek reportedly used Nvidia H800 chips for training its DeepSeek-V3 model."
+    },
+    {
+        "question": "What is the significance of Liang Wenfeng attending the symposium hosted by Li Qiang?",
+        "answer": "Liang Wenfeng’s attendance at the symposium hosted by Li Qiang highlights DeepSeek’s growing importance in China’s AI strategy."
+    },
+    {
+        "question": "What challenge did Chinese firms face after the release of ChatGPT in late 2022?",
+        "answer": "Chinese firms faced a challenge to close the gap in AI capabilities between themselves and US firms after the release of ChatGPT."
+    }
+]
