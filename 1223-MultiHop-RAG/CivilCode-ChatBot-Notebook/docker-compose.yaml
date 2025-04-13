@@ -11,8 +11,9 @@ services:
       - POSTGRES_DB=civilcode
       - POSTGRES_USER=${POSTGRES_USER}
       - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
-    # volumes:
+    volumes:
       # - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+      - civilcode_pgvector:/var/lib/postgresql/data
   
   psql:
     image: postgres:17.2-alpine
@@ -24,3 +25,9 @@ services:
       - POSTGRES_DB=civilcode
       - POSTGRES_USER=${POSTGRES_USER}
       - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+    volumes:
+      - civilcode_psql:/var/lib/postgresql/data
+
+volumes:
+  civilcode_pgvector:
+  civilcode_psql:
